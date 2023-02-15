@@ -1,24 +1,15 @@
 package DAO.FilesDAO;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
 
-public interface FileBasePaths {
-    Path BASE_FOLDER = new File("src\\DB\\").toPath();
-    File CLIENTS_PATH = new File(BASE_FOLDER + "\\clients.txt");
-    File COMPTES_PATH = new File(BASE_FOLDER + "\\comptes.txt");
-    File AGENCES_PATH = new File(BASE_FOLDER + "\\agences.txt");
-    File LOGS_PATH = new File(BASE_FOLDER + "\\logs.txt");
-
-
+public class FilesHandler implements FilesBasePaths {
     static void createBasePath() {
         if (!BASE_FOLDER.toFile().exists()) {
             if (BASE_FOLDER.toFile().mkdir()) {
-                System.out.println(BASE_FOLDER + " created");
+                System.out.println(BASE_FOLDER + " créé");
             } else {
-                System.out.println(BASE_FOLDER + " creation failed");
+                System.out.println(BASE_FOLDER + " création échouée");
             }
         }
     }
@@ -43,15 +34,6 @@ public interface FileBasePaths {
             } else {
                 System.out.println("Fichier " + COMPTES_PATH + " existe déjà");
             }
-            if (!AGENCES_PATH.exists()) {
-                if ((AGENCES_PATH.createNewFile())) {
-                    System.out.println("Fichier " + AGENCES_PATH + " créé");
-                } else {
-                    System.out.println("Fichier " + AGENCES_PATH + " non créé");
-                }
-            } else {
-                System.out.println("Fichier " + AGENCES_PATH + " existe déjà");
-            }
             if (!LOGS_PATH.exists()) {
                 if ((LOGS_PATH.createNewFile())) {
                     System.out.println("Fichier " + LOGS_PATH + " créé");
@@ -66,20 +48,33 @@ public interface FileBasePaths {
         }
     }
 
-    static void createHeaders(){
+    static void createHeaders() {
         try {
             if (CLIENTS_PATH.length() == 0) {
-                Files.write(CLIENTS_PATH.toPath(), ("idClient;nom;prenom;email;login;password;journalisation;comptes;dateAjout").getBytes());
+                Files.write(CLIENTS_PATH.toPath(), ("idClient;nom;prenom;email;dateAjout\n").getBytes());
             }
             if (COMPTES_PATH.length() == 0) {
-                Files.write(COMPTES_PATH.toPath(), ("idCompte;idClient;solde;dateAjout").getBytes());
-            }
-            if (AGENCES_PATH.length() == 0) {
-                Files.write(AGENCES_PATH.toPath(), ("idAgence;nom;adresse;ville;codePostal;dateAjout").getBytes());
+                Files.write(COMPTES_PATH.toPath(), ("idCompte;idClient;solde;dateCreation\n").getBytes());
             }
             if (LOGS_PATH.length() == 0) {
-                Files.write(LOGS_PATH.toPath(), ("idLog;date;action;idClient").getBytes());
+                Files.write(LOGS_PATH.toPath(), ("idLog;date;action;idClient\n").getBytes());
             }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void init() {
+        createBasePath();
+        createFiles();
+        createHeaders();
+    }
+
+    public static void flush() {
+        try {
+            Files.write(CLIENTS_PATH.toPath(), "".getBytes());
+            Files.write(COMPTES_PATH.toPath(), "".getBytes());
+            Files.write(LOGS_PATH.toPath(), "".getBytes());
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -1,5 +1,7 @@
 package Model;
 
+import DAO.ClientsDAO;
+
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Scanner;
@@ -20,7 +22,7 @@ public class Banque{
     private final String nomAgence;
     private String email;
     private int maxClients;
-    private ArrayList<Client> clients;
+    private final ArrayList<Client> clients;
 
     public String getNomAgence() {
         return nomAgence;
@@ -91,6 +93,7 @@ public class Banque{
         } else {
             System.out.println("Impossible d'ajouter le client " + client.getIdClient() + " : nombre max de clients atteint");
         }
+        ClientsDAO.writeClient(client);
     }
 
     public void supprimerClient(Client client) {

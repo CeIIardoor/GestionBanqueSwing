@@ -1,16 +1,31 @@
 package Model;
 
-import java.util.*;
+import DAO.ComptesDAO;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Objects;
+import java.util.Scanner;
 
 public class Client extends User {
     private static int cmpClients = 1;
-    private final int idClient;
+    private final ArrayList<String> journalisation;
     private String nom;
     private String prenom;
     private String email;
-    private ArrayList<String> journalisation;
+    private int idClient;
     private ArrayList<Compte> comptes;
     private Date dateAjout;
+
+    public Client(String nom, String prenom, String email) {
+        this.idClient = cmpClients++;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.email = email;
+        this.journalisation = new ArrayList<>();
+        this.comptes = new ArrayList<>();
+        this.dateAjout = new Date();
+    }
 
     public int getIdClient() {
         return idClient;
@@ -46,6 +61,7 @@ public class Client extends User {
 
     public void ajouterCompte(Compte compte) {
         this.comptes.add(compte);
+        ComptesDAO.writeCompte(compte, this.idClient);
     }
 
     @Override
@@ -91,9 +107,6 @@ public class Client extends User {
         this.dateAjout = new Date();
         this.journalisation.add("Création du client le " + new Date());
         this.comptes = new ArrayList<>();
-//        System.out.println("Entrer le solde initial du compte : ");
-//        double s = new Scanner(System.in).nextDouble();
-//        this.comptes.add(new Compte(this,s));
     }
     public Client(String nom, String prenom, String email, String password) {
         this.idClient = cmpClients++;
@@ -107,7 +120,6 @@ public class Client extends User {
         this.comptes = new ArrayList<>(getMaxComptes());
         this.journalisation.add("Création du client le " + new Date());
         this.comptes = new ArrayList<>();
-//        this.comptes.add(new Compte(this,0));
     }
 
     public int getMaxComptes() {
@@ -137,5 +149,13 @@ public class Client extends User {
             }
         }
         return null;
+    }
+
+    public void setIdClient(int idClient) {
+        this.idClient = idClient;
+    }
+
+    public void setDateAjout(String dateAjout) {
+        this.dateAjout = new Date(dateAjout);
     }
 }

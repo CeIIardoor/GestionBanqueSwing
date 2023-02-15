@@ -19,7 +19,7 @@ public class Compte {
     public boolean equals(Object autreCompte)
      */
     public static int cmpCompte = 1;
-    private final int idCompte;
+    private int idCompte;
     private double solde;
     private Date dateCreation;
     private final ArrayList<String> journalisation;
@@ -39,10 +39,6 @@ public class Compte {
 
     public Date getDateCreation() {
         return dateCreation;
-    }
-
-    public void setDateCreation(Date dateCreation) {
-        this.dateCreation = dateCreation;
     }
 
     public ArrayList<String> getJournalisation() {
@@ -74,6 +70,7 @@ public class Compte {
             journalisation.add("Dépôt de " + solde + "dh");
         }
     }
+
     public Compte(Client proprietaire){
         idCompte = cmpCompte++;
         do {
@@ -103,6 +100,7 @@ public class Compte {
         }
         this.proprietaire = proprietaire;
     }
+
     @Override
     public String toString() {
         return "Compte[" + '\n' +
@@ -119,9 +117,16 @@ public class Compte {
         if (autreCompte == null || getClass() != autreCompte.getClass()) return false;
 
         Compte c = (Compte) autreCompte;
-        return  dateCreation.equals(c.dateCreation)
+        return dateCreation.equals(c.dateCreation)
                 && journalisation.equals(c.journalisation)
                 && proprietaire.equals(c.proprietaire);
     }
 
+    public void setIdCompte(int idCompte) {
+        this.idCompte = idCompte;
+    }
+
+    public void setDateCreation(String dateCreation) {
+        this.dateCreation = new Date(dateCreation);
+    }
 }

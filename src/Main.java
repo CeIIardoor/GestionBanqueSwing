@@ -1,4 +1,5 @@
 import Controller.AuthController;
+import DAO.FilesDAO.FilesHandler;
 import Model.Banque;
 import Model.Client;
 import Model.Compte;
@@ -12,7 +13,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         System.out.println("____________SETUP____________");
-        Banque banque = new Banque("Banque de Test", "banque@test.com", 100);
+        FilesHandler.flush();
+        FilesHandler.init();
+        Banque banque = new Banque("Dire Straits Bank", "direstraits@banque.com", 100);
         Client client1 = new Client("Client1", "Test", "client1@test.com", "123456");
         Client client2 = new Client("Client2", "Test", "client2@test.com", "123456");
         Client client3 = new Client("Client3", "Test", "client3@test.com", "123456");
@@ -28,10 +31,10 @@ public class Main {
         client1.ajouterCompte(compte1);
         client2.ajouterCompte(compte2);
         client3.ajouterCompte(compte3);
-
         System.out.println("_____________________________________");
 
         AuthController authController = new AuthController(banque);
+
         int choix;
         do {
             MenuAuth.afficherMenuAuth();
@@ -46,7 +49,7 @@ public class Main {
                     MenuAdmin menuAdmin = new MenuAdmin(banque);
                     menuAdmin.afficherMenuPrincipale();
                 } else if (currentUser != null && currentUser.getRole().equals("client")) {
-                    MenuClient menuClient = new MenuClient(banque, (Client) currentUser);
+                    MenuClient menuClient = new MenuClient(banque, currentUser);
                     menuClient.afficherMenuPrincipale();
                 } else {
                 System.out.println("Login ou mot de passe incorrect");
@@ -57,9 +60,5 @@ public class Main {
                 System.out.println("Choix invalide");
             }
         } while (choix != 9);
-
-
-
-
     }
 }

@@ -10,13 +10,14 @@ import View.Interfaces.IMenuClient;
 import java.util.Scanner;
 
 public class MenuClient implements IMenuClient {
-    private Banque banque;
-    private User user;
+    private final Banque banque;
+    private final User user;
 
     public MenuClient(Banque _banque, User currentUser) {
         this.banque = _banque;
         this.user = currentUser;
     }
+
     @Override
     public void afficherMenuPrincipale() {
         int choix;
@@ -46,7 +47,7 @@ public class MenuClient implements IMenuClient {
                 case 5:
                     afficherComptes();
                     Scanner scanner = new Scanner(System.in);
-                    System.out.println("Entrer le numéro du compte");
+                    System.out.println("Entrer le numéro du compte à utiliser");
                     int numCompte = scanner.nextInt();
                     Compte compte = ((Client) user).getCompteByID(numCompte);
                     if (compte != null) {
@@ -157,7 +158,4 @@ public class MenuClient implements IMenuClient {
         }
         System.out.println("____________________________________________________");
     }
-
-
-
 }
