@@ -1,22 +1,9 @@
 package Model;
 
-import DAO.ClientsDAO;
-
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Scanner;
 public class Banque{
-    /*
-    Écrire une classe Banque liée par relation d’agrégation au deux classes Compte et Client :
-    Attributs : idBanque, nomAgence, email, maxComptes,
-    maxClients et un tableau de comptes, tableau de Clients.
-    Accès : getters, setters
-    (nombre max de Clients et Comptes doit être fixé dès la
-    création de l’agence bancaire)
-    (id de la banque doit être autogénéré)
-    Méthodes : public String toString(),
-    public boolean equals(Object autreBanque)
-     */
     private static int cmpBanques = 1;
     private final int idBanque;
     private final String nomAgence;
@@ -93,7 +80,6 @@ public class Banque{
         } else {
             System.out.println("Impossible d'ajouter le client " + client.getIdClient() + " : nombre max de clients atteint");
         }
-        ClientsDAO.writeClient(client);
     }
 
     public void supprimerClient(Client client) {
@@ -105,12 +91,21 @@ public class Banque{
         }
     }
 
-    public Compte getCompteByID(int numCompte) {
+    public Compte getCompteById(int numCompte) {
         for (Client client : clients) {
             for (Compte compte : client.getComptes()) {
                 if (compte.getIdCompte() == numCompte) {
                     return compte;
                 }
+            }
+        }
+        return null;
+    }
+
+    public Client getClientById(int idClient) {
+        for (Client client : clients) {
+            if (client.getIdClient() == idClient) {
+                return client;
             }
         }
         return null;

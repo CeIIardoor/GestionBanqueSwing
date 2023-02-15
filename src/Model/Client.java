@@ -1,7 +1,6 @@
 package Model;
 
-import DAO.ComptesDAO;
-
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Objects;
@@ -15,17 +14,7 @@ public class Client extends User {
     private String email;
     private int idClient;
     private ArrayList<Compte> comptes;
-    private Date dateAjout;
-
-    public Client(String nom, String prenom, String email) {
-        this.idClient = cmpClients++;
-        this.nom = nom;
-        this.prenom = prenom;
-        this.email = email;
-        this.journalisation = new ArrayList<>();
-        this.comptes = new ArrayList<>();
-        this.dateAjout = new Date();
-    }
+    private String dateAjout;
 
     public int getIdClient() {
         return idClient;
@@ -61,7 +50,6 @@ public class Client extends User {
 
     public void ajouterCompte(Compte compte) {
         this.comptes.add(compte);
-        ComptesDAO.writeCompte(compte, this.idClient);
     }
 
     @Override
@@ -86,7 +74,19 @@ public class Client extends User {
                 comptes.equals(client.comptes);
     }
 
-    public Client(){
+    public Client(String nom, String prenom, String email) {
+        this.idClient = cmpClients++;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.email = email;
+        super.setLogin(email);
+        super.setPassword("123456");
+        this.journalisation = new ArrayList<>();
+        this.comptes = new ArrayList<>();
+        this.dateAjout = new SimpleDateFormat("dd/MM/yyyy").format(new Date());
+    }
+
+    public Client() {
         System.out.println("Entrer le nom du client : ");
         this.nom = new Scanner(System.in).nextLine();
         System.out.println("Entrer le prénom du client : ");
@@ -104,7 +104,7 @@ public class Client extends User {
         this.idClient = cmpClients++;
         this.journalisation = new ArrayList<>();
         this.comptes = new ArrayList<>(2);
-        this.dateAjout = new Date();
+        this.dateAjout = new SimpleDateFormat("yyyy/MM/dd").format(new Date());
         this.journalisation.add("Création du client le " + new Date());
         this.comptes = new ArrayList<>();
     }
@@ -115,7 +115,7 @@ public class Client extends User {
         this.email = email;
         super.setLogin(email);
         super.setPassword(password);
-        this.dateAjout = new Date();
+        this.dateAjout = new SimpleDateFormat("yyyy/MM/dd").format(new Date());
         this.journalisation = new ArrayList<>();
         this.comptes = new ArrayList<>(getMaxComptes());
         this.journalisation.add("Création du client le " + new Date());
@@ -126,7 +126,7 @@ public class Client extends User {
         return 3;
     }
 
-    public Date getDateAjout() {
+    public String getDateAjout() {
         return dateAjout;
     }
 
@@ -156,6 +156,6 @@ public class Client extends User {
     }
 
     public void setDateAjout(String dateAjout) {
-        this.dateAjout = new Date(dateAjout);
+        this.dateAjout = dateAjout;
     }
 }

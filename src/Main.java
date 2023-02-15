@@ -1,36 +1,28 @@
 import Controller.AuthController;
+import DAO.FilesDAO.DataLoader;
 import DAO.FilesDAO.FilesHandler;
 import Model.Banque;
-import Model.Client;
-import Model.Compte;
 import Model.User;
 import View.MenuAdmin;
 import View.MenuAuth;
 import View.MenuClient;
 
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         System.out.println("____________SETUP____________");
+        Banque banque = new Banque("Dire Straits Bank", "direstraits@banque.com", 100);
         FilesHandler.flush();
         FilesHandler.init();
-        Banque banque = new Banque("Dire Straits Bank", "direstraits@banque.com", 100);
-        Client client1 = new Client("Client1", "Test", "client1@test.com", "123456");
-        Client client2 = new Client("Client2", "Test", "client2@test.com", "123456");
-        Client client3 = new Client("Client3", "Test", "client3@test.com", "123456");
+        FilesHandler.seed();
 
-        Compte compte1 = new Compte(client1, 1000);
-        Compte compte2 = new Compte(client2, 2000);
-        Compte compte3 = new Compte(client3, 3000);
-
-        banque.ajouterClient(client1);
-        banque.ajouterClient(client2);
-        banque.ajouterClient(client3);
-
-        client1.ajouterCompte(compte1);
-        client2.ajouterCompte(compte2);
-        client3.ajouterCompte(compte3);
+        DataLoader dataLoader = new DataLoader(banque);
+        dataLoader.load("clients");
+        dataLoader.load("comptes");
+        System.out.println(banque.getClients());
+        System.out.println(banque.getComptes());
         System.out.println("_____________________________________");
 
         AuthController authController = new AuthController(banque);

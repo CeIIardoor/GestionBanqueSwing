@@ -18,13 +18,6 @@ public class ServiceTri implements IServiceTri {
         for (int i = 0; i < tableauATrier.size(); i++) {
             for (int j = 0; j < tableauATrier.size(); j++) {
                 switch (trierPar) {
-                    case "date":
-                        if (tableauATrier.get(i).getDateAjout().compareTo(tableauATrier.get(j).getDateAjout()) < 0) {
-                            Client temp = tableauATrier.get(i);
-                            tableauATrier.set(i, tableauATrier.get(j));
-                            tableauATrier.set(j, temp);
-                        }
-                        break;
                     case "solde":
                         if (tableauATrier.get(i).getSoldeTotal() < tableauATrier.get(j).getSoldeTotal()) {
                             Client temp = tableauATrier.get(i);
@@ -42,7 +35,6 @@ public class ServiceTri implements IServiceTri {
                 }
             }
         }
-        tableauATrier.forEach(System.out::println);
         return tableauATrier;
     }
 
@@ -51,13 +43,6 @@ public class ServiceTri implements IServiceTri {
         for (int i = 0; i < tableauATrier.size(); i++) {
             for (int j = 0; j < tableauATrier.size(); j++) {
                 switch (trierPar) {
-                    case "date":
-                        if (tableauATrier.get(i).getDateAjout().compareTo(tableauATrier.get(j).getDateAjout()) > 0) {
-                            Client temp = tableauATrier.get(i);
-                            tableauATrier.set(i, tableauATrier.get(j));
-                            tableauATrier.set(j, temp);
-                        }
-                        break;
                     case "solde":
                         if (tableauATrier.get(i).getSoldeTotal() > tableauATrier.get(j).getSoldeTotal()) {
                             Client temp = tableauATrier.get(i);
@@ -75,8 +60,6 @@ public class ServiceTri implements IServiceTri {
                 }
             }
         }
-        tableauATrier.forEach(System.out::println);
         return tableauATrier;
     }
 }
-

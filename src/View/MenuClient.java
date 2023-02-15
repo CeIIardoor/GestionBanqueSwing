@@ -94,7 +94,7 @@ public class MenuClient implements IMenuClient {
                             ));
                     System.out.println("Entrer le numéro du compte à créditer");
                     int numCompte = new Scanner(System.in).nextInt();
-                    Compte compteCredite = banque.getCompteByID(numCompte);
+                    Compte compteCredite = banque.getCompteById(numCompte);
                     if (compteCredite != null) {
                         System.out.println("Entrer le montant à virer");
                         montant = new Scanner(System.in).nextDouble();

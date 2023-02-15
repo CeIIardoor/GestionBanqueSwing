@@ -1,20 +1,20 @@
 package DAO;
 
 import DAO.FilesDAO.FilesBasePaths;
+import Model.Banque;
+import Model.Client;
 import Model.Compte;
-import Service.ServiceCRUD;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ComptesDAO {
-    public static ArrayList<Compte> readComptes() throws FileNotFoundException {
+    public static void loadComptes(Banque banque) throws FileNotFoundException {
         File comptescsv = new File(FilesBasePaths.COMPTES_PATH.toURI());
-        ArrayList<Compte> listeComptes = new ArrayList<>();
         Scanner scanner = new Scanner(comptescsv);
+        scanner.nextLine();
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
             String[] data = line.split(";");
@@ -22,12 +22,12 @@ public class ComptesDAO {
             int idClient = Integer.parseInt(data[1]);
             double solde = Double.parseDouble(data[2]);
             String dateCreation = data[3];
-            Compte compte = new Compte(ServiceCRUD.getClientById(idClient), solde);
+            Client proprietaire = banque.getClientById(idClient);
+            Compte compte = new Compte(proprietaire, solde);
             compte.setIdCompte(idCompte);
             compte.setDateCreation(dateCreation);
-            listeComptes.add(compte);
+            proprietaire.ajouterCompte(compte);
         }
-        return listeComptes;
     }
 
     public static void writeCompte(Compte compte, int idClient) {

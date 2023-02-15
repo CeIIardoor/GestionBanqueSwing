@@ -1,4 +1,5 @@
-idClient;nom;prenom;email;dateAjout
-1;Client1;Test;client1@test.com;Wed Feb 15 14:13:46 WEST 2023
-2;Client2;Test;client2@test.com;Wed Feb 15 14:13:46 WEST 2023
-3;Client3;Test;client3@test.com;Wed Feb 15 14:13:46 WEST 2023
+idClient;nom;prenom;email;password;dateAjout
+1;test;test;test@test.com;123456;2020-01-01
+2;John;Doe;johndoe@test.com;123456;2020-01-01
+3;Jane;Doe;janedoe@test.com;123456;2020-01-01
+4;Jack;Doe;jackdoe@test.com;123456;2020-01-01
