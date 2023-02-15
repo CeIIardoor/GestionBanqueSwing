@@ -51,9 +51,6 @@ public class FilesHandler implements FilesBasePaths {
             if (COMPTES_PATH.length() == 0) {
                 Files.write(COMPTES_PATH.toPath(), ("idCompte;idClient;solde;dateCreation\n").getBytes(), StandardOpenOption.APPEND);
             }
-            if (LOGS_PATH.length() == 0) {
-                Files.write(LOGS_PATH.toPath(), ("idLog;date;action;idClient\n").getBytes(), StandardOpenOption.APPEND);
-            }
         } catch (IOException e) {
             e.printStackTrace();
         }

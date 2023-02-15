@@ -1,3 +1,2 @@
-idLog;date;action;idClient
 Client test@test.com s'est connecté
 Retrait de 100.0 sur le compte 2
