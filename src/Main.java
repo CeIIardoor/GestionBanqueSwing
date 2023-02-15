@@ -1,7 +1,11 @@
 import Controller.AuthController;
+import DAO.ClientsDAO;
+import DAO.ComptesDAO;
 import DAO.FilesDAO.DataLoader;
 import DAO.FilesDAO.FilesHandler;
 import Model.Banque;
+import Model.Client;
+import Model.Compte;
 import Model.User;
 import View.MenuAdmin;
 import View.MenuAuth;
@@ -12,18 +16,20 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        System.out.println("____________SETUP____________");
+//        System.out.println("____________SETUP____________");
         Banque banque = new Banque("Dire Straits Bank", "direstraits@banque.com", 100);
-        FilesHandler.flush();
-        FilesHandler.init();
-        FilesHandler.seed();
+//      FilesHandler.flush(); // Pour vider la base de données
+
+        if (!FilesHandler.BASE_FOLDER.toFile().exists()) { // Si le dossier DB n'existe pas
+            FilesHandler.init();
+            FilesHandler.seed();
+        }
 
         DataLoader dataLoader = new DataLoader(banque);
         dataLoader.load("clients");
         dataLoader.load("comptes");
-        System.out.println(banque.getClients());
-        System.out.println(banque.getComptes());
-        System.out.println("_____________________________________");
+
+//        System.out.println("_____________________________________");
 
         AuthController authController = new AuthController(banque);
 
@@ -47,6 +53,15 @@ public class Main {
                 System.out.println("Login ou mot de passe incorrect");
                 }
             } else if (choix == 9) {
+                FilesHandler.flush();
+                FilesHandler.init();
+                for (Client client : banque.getClients()) {
+                    ClientsDAO.writeClient(client);
+                    for (Compte compte : client.getComptes()) {
+                        ComptesDAO.writeCompte(compte, client.getId());
+                    }
+                }
+
                 System.out.println("Au revoir");
             } else {
                 System.out.println("Choix invalide");

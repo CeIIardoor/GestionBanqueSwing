@@ -114,7 +114,7 @@ public class Compte {
                 "+ idCompte=" + idCompte + '\n' +
                 "- solde=" + solde + '\n' +
                 "- dateCreation= " + dateCreation + '\n' +
-                "- proprietaire= " + proprietaire.getIdClient() + "- " + proprietaire.getNom() + '\n' +
+                "- proprietaire= " + proprietaire.getId() + "- " + proprietaire.getNom() + '\n' +
                 ']';
     }
 }

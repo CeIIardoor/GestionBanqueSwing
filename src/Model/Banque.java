@@ -76,18 +76,18 @@ public class Banque{
     public void ajouterClient(Client client){
         if (this.clients.size() < this.maxClients){
             this.clients.add(client);
-            System.out.println("Client" + client.getIdClient() + " ajouté avec succès");
+//            System.out.println("Client " + client.getId() + " ajouté avec succès");
         } else {
-            System.out.println("Impossible d'ajouter le client " + client.getIdClient() + " : nombre max de clients atteint");
+            System.out.println("Impossible d'ajouter le client " + client.getId() + " : nombre max de clients atteint");
         }
     }
 
     public void supprimerClient(Client client) {
         if (this.clients.contains(client)) {
             this.clients.remove(client);
-            System.out.println("Client " + client.getIdClient() + " supprimé avec succès");
+            System.out.println("Client " + client.getId() + " supprimé avec succès");
         } else {
-            System.out.println("Impossible de supprimer le client " + client.getIdClient());
+            System.out.println("Impossible de supprimer le client " + client.getId());
         }
     }
 
@@ -104,7 +104,7 @@ public class Banque{
 
     public Client getClientById(int idClient) {
         for (Client client : clients) {
-            if (client.getIdClient() == idClient) {
+            if (client.getId() == idClient) {
                 return client;
             }
         }

@@ -21,7 +21,6 @@ public class ClientsDAO {
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
             String[] data = line.split(";");
-            System.out.println(data[0]);
             int idClient = Integer.parseInt(data[0]);
             String nom = data[1];
             String prenom = data[2];
@@ -43,7 +42,7 @@ public class ClientsDAO {
         File clientscsv = new File(FilesBasePaths.CLIENTS_PATH.toURI());
         try {
             FileWriter writer = new FileWriter(clientscsv, true);
-            String sb = client.getIdClient() + ";" +
+            String sb = client.getId() + ";" +
                     client.getNom() + ";" +
                     client.getPrenom() + ";" +
                     client.getEmail() + ";" +

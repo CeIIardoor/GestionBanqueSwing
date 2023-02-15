@@ -16,7 +16,7 @@ public class ServiceCRUD {
 
     public static Client getClientById(int id){
         for (Client client : banque.getClients()) {
-            if (client.getIdClient() == id) {
+            if (client.getId() == id) {
                 return client;
             }
         }
@@ -56,7 +56,7 @@ public class ServiceCRUD {
     public void creerEtAjouterClient(){
         Client client = new Client();
         banque.ajouterClient(client);
-        System.out.println("Client " + client.getIdClient() + "créé et ajouté à" + banque.getNomAgence());
+        System.out.println("Client " + client.getId() + "créé et ajouté à" + banque.getNomAgence());
     }
 
     public void lierCompteAuClient(int idClient, int idCompte){
@@ -65,9 +65,9 @@ public class ServiceCRUD {
         if (client != null && compte != null){
             if (client.getComptes().size() < client.getMaxComptes()){
                 client.ajouterCompte(compte);
-                System.out.println("Compte " + compte.getIdCompte() + " lié au client " + client.getIdClient());
+                System.out.println("Compte " + compte.getIdCompte() + " lié au client " + client.getId());
             } else {
-                System.out.println("Impossible de lier le compte " + compte.getIdCompte() + " au client " + client.getIdClient() + " : nombre max de comptes atteint");
+                System.out.println("Impossible de lier le compte " + compte.getIdCompte() + " au client " + client.getId() + " : nombre max de comptes atteint");
             }
         } else {
             System.out.println("Compte ou client inexistant");
@@ -97,7 +97,7 @@ public class ServiceCRUD {
     public Client chercherUnClient(int idClient){
         Client client = getClientById(idClient);
         if (client != null){
-            System.out.println("Client " + client.getIdClient() + " trouvé");
+            System.out.println("Client " + client.getId() + " trouvé");
             return client;
         } else {
             System.out.println("Client inexistant");
@@ -118,7 +118,7 @@ public class ServiceCRUD {
     public void consulterDetailClient(int idClient){
         Client client = chercherUnClient(idClient);
         if (client != null){
-            System.out.println("Détail du client " + client.getIdClient() + " :");
+            System.out.println("Détail du client " + client.getId() + " :");
             System.out.println(client);
         } else {
             System.out.println("Client inexistant");
@@ -143,15 +143,15 @@ public class ServiceCRUD {
         Client clientAModifier = getClientById(idClient);
         if (clientAModifier != null){
             Scanner sc = new Scanner(System.in);
-            System.out.println("Saisir le nouveau nom du client " + clientAModifier.getIdClient() + " :");
+            System.out.println("Saisir le nouveau nom du client " + clientAModifier.getId() + " :");
             clientAModifier.setNom(sc.nextLine());
-            System.out.println("Saisir le nouveau prénom du client " + clientAModifier.getIdClient() + " :");
+            System.out.println("Saisir le nouveau prénom du client " + clientAModifier.getId() + " :");
             clientAModifier.setPrenom(sc.nextLine());
             do {
-                System.out.println("Saisir le nouveau mail du client " + clientAModifier.getIdClient() + " :");
+                System.out.println("Saisir le nouveau mail du client " + clientAModifier.getId() + " :");
                 clientAModifier.setEmail(sc.nextLine());
             } while (!clientAModifier.getEmail().matches("^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\\.[a-z]{2,4}$"));
-            System.out.println("Client " + clientAModifier.getIdClient() + " modifié");
+            System.out.println("Client " + clientAModifier.getId() + " modifié");
         } else {
             System.out.println("Client inexistant");
         }

@@ -23,8 +23,6 @@ public class FilesHandler implements FilesBasePaths {
                 } else {
                     System.out.println("Fichier " + CLIENTS_PATH + " non créé");
                 }
-            } else {
-                System.out.println("Fichier " + CLIENTS_PATH + " existe déjà");
             }
             if (!COMPTES_PATH.exists()) {
                 if ((COMPTES_PATH.createNewFile())) {
@@ -32,8 +30,6 @@ public class FilesHandler implements FilesBasePaths {
                 } else {
                     System.out.println("Fichier " + COMPTES_PATH + " non créé");
                 }
-            } else {
-                System.out.println("Fichier " + COMPTES_PATH + " existe déjà");
             }
             if (!LOGS_PATH.exists()) {
                 if ((LOGS_PATH.createNewFile())) {
@@ -41,8 +37,6 @@ public class FilesHandler implements FilesBasePaths {
                 } else {
                     System.out.println("Fichier " + LOGS_PATH + " non créé");
                 }
-            } else {
-                System.out.println("Fichier " + LOGS_PATH + " existe déjà");
             }
         } catch (Exception e) {
             e.printStackTrace();

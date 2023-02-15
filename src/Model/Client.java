@@ -16,7 +16,7 @@ public class Client extends User {
     private ArrayList<Compte> comptes;
     private String dateAjout;
 
-    public int getIdClient() {
+    public int getId() {
         return idClient;
     }
 
