@@ -3,6 +3,7 @@ import DAO.ClientsDAO;
 import DAO.ComptesDAO;
 import DAO.FilesDAO.DataLoader;
 import DAO.FilesDAO.FilesHandler;
+import DAO.LogsDAO;
 import Model.Banque;
 import Model.Client;
 import Model.Compte;
@@ -44,14 +45,28 @@ public class Main {
                 String password = new Scanner(System.in).nextLine();
                 User currentUser = authController.authenticate(login, password);
                 if (currentUser != null && currentUser.getRole().equals("admin")) {
+                    LogsDAO.writeLog("Admin " + currentUser.getLogin() + " s'est connecté");
                     MenuAdmin menuAdmin = new MenuAdmin(banque);
                     menuAdmin.afficherMenuPrincipale();
                 } else if (currentUser != null && currentUser.getRole().equals("client")) {
+                    LogsDAO.writeLog("Client " + currentUser.getLogin() + " s'est connecté");
                     MenuClient menuClient = new MenuClient(banque, currentUser);
                     menuClient.afficherMenuPrincipale();
                 } else {
-                System.out.println("Login ou mot de passe incorrect");
+                    System.out.println("Login ou mot de passe incorrect");
                 }
+            } else if (choix == 2) {
+                System.out.println("Affichage des logs");
+                if (FilesHandler.LOGS_PATH.length() == 0) {
+                    System.out.println("Aucun log");
+                } else {
+                    FilesHandler.readLogs();
+                }
+
+            } else if (choix == 3) {
+                FilesHandler.flushLogs();
+                System.out.println("Logs vidés");
+
             } else if (choix == 9) {
                 FilesHandler.flush();
                 FilesHandler.init();

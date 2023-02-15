@@ -95,6 +95,13 @@ public class FilesHandler implements FilesBasePaths {
         try {
             Files.write(CLIENTS_PATH.toPath(), "".getBytes());
             Files.write(COMPTES_PATH.toPath(), "".getBytes());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void flushLogs() {
+        try {
             Files.write(LOGS_PATH.toPath(), "".getBytes());
         } catch (IOException e) {
             e.printStackTrace();
@@ -104,5 +111,15 @@ public class FilesHandler implements FilesBasePaths {
     public static void seed() {
         seedComptes();
         seedClients();
+    }
+
+    public static void readLogs() {
+        if (LOGS_PATH.exists()) {
+            try {
+                Files.lines(LOGS_PATH.toPath()).forEach(System.out::println);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }

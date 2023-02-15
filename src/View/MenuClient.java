@@ -1,5 +1,6 @@
 package View;
 
+import DAO.LogsDAO;
 import Model.Banque;
 import Model.Client;
 import Model.Compte;
@@ -82,11 +83,13 @@ public class MenuClient implements IMenuClient {
                     System.out.println("Entrer le montant à déposer");
                     double montant = new Scanner(System.in).nextDouble();
                     serviceTransactionnel.verser(montant, compte);
+                    LogsDAO.writeLog("Dépôt de " + montant + " sur le compte " + compte.getIdCompte());
                     break;
                 case 2:
                     System.out.println("Entrer le montant à retirer");
                     montant = new Scanner(System.in).nextDouble();
                     serviceTransactionnel.retirer(montant, compte);
+                    LogsDAO.writeLog("Retrait de " + montant + " sur le compte " + compte.getIdCompte());
                     break;
                 case 3:
                     banque.getComptes().forEach(
@@ -99,6 +102,7 @@ public class MenuClient implements IMenuClient {
                         System.out.println("Entrer le montant à virer");
                         montant = new Scanner(System.in).nextDouble();
                         serviceTransactionnel.effectuerUnVirement(montant, compte, compteCredite);
+                        LogsDAO.writeLog("Virement de " + montant + " sur le compte " + compte.getIdCompte());
                     } else {
                         System.out.println("Compte introuvable");
                     }
