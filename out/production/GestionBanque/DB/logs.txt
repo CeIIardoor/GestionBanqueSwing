@@ -47,3 +47,24 @@ Admin : admin@test.com logged in from Swing
 Admin : admin@test.com logged in from Swing
 Admin : admin@test.com logged in from Swing
 Admin : admin@test.com logged in from Swing
+Admin : admin@test.com logged in from Swing
+Ouverture de la fenêtre CRUD
+Ouverture de la fenêtre CRUD
+Ouverture de la fenêtre CRUD
+Admin : admin@test.com logged in from Swing
+Ouverture de la fenêtre CRUD
+Admin : admin@test.com logged in from Swing
+Ouverture de la fenêtre CRUD
+_______________________________________________________Fin Session
+Admin : admin@test.com logged in from Swing
+Admin : admin@test.com logged in from Swing
+Ouverture de la fenêtre CRUD
+Admin : admin@test.com logged in from Swing
+Ouverture de la fenêtre CRUD
+Admin : admin@test.com logged in from Swing
+Ouverture de la fenêtre CRUD
+Ouverture de la fenêtre CRUD
+_______________________________________________________Fin Session
+Admin : admin@test.com logged in from Swing
+Admin : admin@test.com logged in from Swing
+Ouverture de la fenêtre CRUD
