@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ef869a2e-b100-43cb-8dfe-fcf2c7a1621a" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GwoxTV12fR4uH0iiLrbO0siZjf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TODO_SCOPE": "All Places",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "last_opened_file_path": "C:/Users/lenovo/Desktop/Repos/GestionBanque",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="Push.Settings">
+    <force-push-targets>
+      <force-push-target remote-path="origin" branch="master" />
+    </force-push-targets>
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ConsoleMain">
+    <configuration name="ConsoleMain" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ConsoleMain" />
+      <module name="GestionBanque" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwingMain" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SwingMain" />
+      <module name="GestionBanque" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.SwingMain" />
+      <item itemvalue="Application.ConsoleMain" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ef869a2e-b100-43cb-8dfe-fcf2c7a1621a" name="Changes" comment="" />
+      <created>1667309254463</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667309254463</updated>
+      <workItem from="1667309255777" duration="4693000" />
+      <workItem from="1667387016332" duration="18000" />
+      <workItem from="1667390280115" duration="324000" />
+      <workItem from="1667390673142" duration="4191000" />
+      <workItem from="1667480427502" duration="11511000" />
+      <workItem from="1667502962279" duration="281000" />
+      <workItem from="1667503316837" duration="10945000" />
+      <workItem from="1667543423062" duration="5042000" />
+      <workItem from="1667555805497" duration="552000" />
+      <workItem from="1667570737249" duration="14875000" />
+      <workItem from="1667653950520" duration="3603000" />
+      <workItem from="1667822630301" duration="7472000" />
+      <workItem from="1667835112642" duration="4720000" />
+      <workItem from="1668343116691" duration="2276000" />
+      <workItem from="1668439562229" duration="106000" />
+      <workItem from="1669036869276" duration="5314000" />
+      <workItem from="1669045317107" duration="91000" />
+      <workItem from="1669545657669" duration="15469000" />
+      <workItem from="1669649156527" duration="1972000" />
+      <workItem from="1670178489610" duration="267000" />
+      <workItem from="1670178875576" duration="6740000" />
+      <workItem from="1670241791366" duration="1841000" />
+      <workItem from="1670245601776" duration="240000" />
+      <workItem from="1670246194409" duration="4951000" />
+      <workItem from="1670253821938" duration="1112000" />
+      <workItem from="1670255148602" duration="32000" />
+      <workItem from="1670860108922" duration="1797000" />
+      <workItem from="1670861963175" duration="2176000" />
+      <workItem from="1672674809266" duration="358000" />
+      <workItem from="1672675215080" duration="3992000" />
+      <workItem from="1673884263777" duration="198000" />
+      <workItem from="1673884501474" duration="1476000" />
+      <workItem from="1674210318322" duration="139000" />
+      <workItem from="1674828376919" duration="469000" />
+      <workItem from="1674829007246" duration="141000" />
+      <workItem from="1675015490546" duration="1222000" />
+      <workItem from="1676460141129" duration="177000" />
+      <workItem from="1676460407947" duration="23648000" />
+    </task>
+    <task id="LOCAL-00001" summary="progress projet java (Dep Inj)">
+      <created>1667492908381</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667492908381</updated>
+    </task>
+    <task id="LOCAL-00002" summary="progress projet java (Dep Inj)">
+      <created>1667501856847</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667501856847</updated>
+    </task>
+    <task id="LOCAL-00003" summary="l3cha t7reg">
+      <created>1667503122768</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667503122768</updated>
+    </task>
+    <task id="LOCAL-00004" summary="l3cha t7reg">
+      <created>1667503238318</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667503238318</updated>
+    </task>
+    <task id="LOCAL-00005" summary="l3cha t7reg">
+      <created>1667503385947</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667503385948</updated>
+    </task>
+    <task id="LOCAL-00006" summary="progress">
+      <created>1667509924442</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667509924442</updated>
+    </task>
+    <task id="LOCAL-00007" summary="a mimir">
+      <created>1667513640723</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667513640723</updated>
+    </task>
+    <task id="LOCAL-00008" summary="a mimir">
+      <created>1667513901904</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667513901904</updated>
+    </task>
+    <task id="LOCAL-00009" summary="a mimir">
+      <created>1667513936563</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1667513936563</updated>
+    </task>
+    <task id="LOCAL-00010" summary="a mimir">
+      <created>1667513946706</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1667513946706</updated>
+    </task>
+    <task id="LOCAL-00011" summary="a mimir">
+      <created>1667514005390</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1667514005390</updated>
+    </task>
+    <task id="LOCAL-00012" summary="a mimir">
+      <created>1667514137146</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1667514137146</updated>
+    </task>
+    <task id="LOCAL-00013" summary="a mimir">
+      <created>1667514196617</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1667514196617</updated>
+    </task>
+    <task id="LOCAL-00014" summary="a mimir">
+      <created>1667514496166</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1667514496166</updated>
+    </task>
+    <task id="LOCAL-00015" summary="oncf">
+      <created>1667548392041</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1667548392041</updated>
+    </task>
+    <task id="LOCAL-00016" summary="nostalgia">
+      <created>1667573581084</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1667573581084</updated>
+    </task>
+    <task id="LOCAL-00017" summary="nostalgia">
+      <created>1667574043993</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1667574043993</updated>
+    </task>
+    <task id="LOCAL-00018" summary="js vibes : scanner.close closes system.in ?">
+      <created>1667588806109</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1667588806109</updated>
+    </task>
+    <task id="LOCAL-00019" summary="js vibes : scanner.close closes system.in ?">
+      <created>1667606964942</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1667606964942</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Suppression">
+      <created>1667830924224</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1667830924224</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Menu">
+      <created>1668344356862</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1668344356862</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Strategy Design Pattern">
+      <created>1669551651132</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1669551651132</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Auth facade">
+      <created>1669567159754</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1669567159754</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Auth facade">
+      <created>1669567851792</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1669567851792</updated>
+    </task>
+    <task id="LOCAL-00025" summary="FileSystem">
+      <created>1676471578153</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1676471578153</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Csv Loader + Seeder">
+      <created>1676480567753</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1676480567753</updated>
+    </task>
+    <task id="LOCAL-00027" summary="V1.0 Console App">
+      <created>1676496249126</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1676496249126</updated>
+    </task>
+    <task id="LOCAL-00028" summary="V1.0 Console App">
+      <created>1676497116371</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1676497116371</updated>
+    </task>
+    <task id="LOCAL-00029" summary="V1.0 Console App">
+      <created>1676497534198</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1676497534198</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Adding Swing GUI">
+      <created>1676505682720</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1676505682720</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$USER_HOME$" />
+    </ignored-roots>
+    <MESSAGE value="progress projet java (Dep Inj)" />
+    <MESSAGE value="l3cha t7reg" />
+    <MESSAGE value="progress" />
+    <MESSAGE value="a mimir" />
+    <MESSAGE value="oncf" />
+    <MESSAGE value="nostalgia" />
+    <MESSAGE value="js vibes : scanner.close closes system.in ?" />
+    <MESSAGE value="Suppression" />
+    <MESSAGE value="Menu" />
+    <MESSAGE value="Strategy Design Pattern" />
+    <MESSAGE value="Auth facade" />
+    <MESSAGE value="FileSystem" />
+    <MESSAGE value="Csv Loader + Seeder" />
+    <MESSAGE value="V1.0 Console App" />
+    <MESSAGE value="Adding Swing GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Swing GUI" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.NoSuchElementException" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
