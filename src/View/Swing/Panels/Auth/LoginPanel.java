@@ -1,11 +1,17 @@
 package View.Swing.Panels.Auth;
 
+import Controller.AuthController;
+import Model.Banque;
+import Model.User;
+import View.Swing.Frames.AdminFrame;
+
 import javax.swing.*;
 import java.awt.*;
 
 public class LoginPanel extends JPanel {
 
-    public LoginPanel() {
+    public LoginPanel(Banque banque) {
+
         setLayout(new BorderLayout());
 
         // logo and title panel
@@ -58,8 +64,22 @@ public class LoginPanel extends JPanel {
         loginButton.setBorder(BorderFactory.createLineBorder(Color.GRAY, 1));
         loginButton.setCursor(new Cursor(Cursor.HAND_CURSOR));
         loginButton.setFocusPainted(false);
-
-        // add action to button
+        loginButton.addActionListener(e -> {
+            String email = emailField.getText();
+            String password = String.valueOf(passwordField.getPassword());
+            AuthController authController = new AuthController(banque);
+            User currentUser = authController.authenticate(email, password);
+            if (currentUser != null) {
+                if (currentUser.getRole().equals("admin")) {
+                    System.out.println("Hello, Admin!");
+                    new AdminFrame(banque);
+                } else if (currentUser.getRole().equals("client")) {
+                    System.out.println("Hello, Client!");
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid email or password. Please try again.", "Login Failed", JOptionPane.ERROR_MESSAGE);
+            }
+        });
         buttonPanel.add(loginButton);
 
         // Add components to main panel

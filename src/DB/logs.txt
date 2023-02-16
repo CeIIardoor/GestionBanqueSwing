@@ -1,10 +1,10 @@
-Client johndoe@test.com s'est connecté
-Dépôt de 4444.0 sur le compte 4
-Virement de 888.0 sur le compte 4
+Admin admin@test.com s'est connecté
+Le montant de 111.0 a été versé sur le compte 1
+Client client@test.com s'est connecté
 _______________________________________________________Fin Session
-Client janedoe@test.com s'est connecté
-Dépôt de 777.0 sur le compte 7
-Virement de 123.0 sur le compte 7
+
+Client client@test.com s'est connecté
+Client client@test.com s'est connecté
+Admin admin@test.com s'est connecté
 _______________________________________________________Fin Session
-Admin admin@admin.com s'est connecté
-_______________________________________________________Fin Session
+

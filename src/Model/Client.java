@@ -83,7 +83,7 @@ public class Client extends User {
         super.setPassword("123456");
         this.journalisation = new ArrayList<>();
         this.comptes = new ArrayList<>();
-        this.dateAjout = new SimpleDateFormat("dd/MM/yyyy").format(new Date());
+        this.dateAjout = new SimpleDateFormat("yyyy/MM/dd").format(new Date());
     }
 
     public Client() {

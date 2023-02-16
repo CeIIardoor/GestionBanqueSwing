@@ -17,6 +17,7 @@ public class MenuAdmin implements IMenuAdmin {
     public void afficherMenuPrincipale(){
         int choix;
         do{
+            System.out.println("********************************************************************************");
             System.out.println("Bienvenue dans la banque " + banque.getNomAgence());
             MenuAdmin.afficherMenuBanque();
             ServiceBanque serviceBanque = new ServiceBanque(banque);

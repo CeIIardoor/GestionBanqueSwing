@@ -56,7 +56,7 @@ public class ServiceCRUD {
     public void creerEtAjouterClient(){
         Client client = new Client();
         banque.ajouterClient(client);
-        System.out.println("Client " + client.getId() + "créé et ajouté à" + banque.getNomAgence());
+        System.out.println("Client " + client.getId() + " créé et ajouté à " + banque.getNomAgence());
     }
 
     public void lierCompteAuClient(int idClient, int idCompte){

@@ -47,6 +47,9 @@ public class MenuClient implements IMenuClient {
                     break;
                 case 5:
                     afficherComptes();
+                    System.out.println("--------------------------------");
+                    System.out.println("Solde Total: " + ((Client) user).getSoldeTotal());
+                    System.out.println("--------------------------------");
                     Scanner scanner = new Scanner(System.in);
                     System.out.println("Entrer le numéro du compte à utiliser");
                     int numCompte = scanner.nextInt();
@@ -160,6 +163,9 @@ public class MenuClient implements IMenuClient {
         for (int i = 0; i < client.getComptes().size(); i++) {
             System.out.println(i + 1 + ". " + client.getComptes().get(i).toString());
         }
+        System.out.println("****************************************************");
+        System.out.println("Solde Total: " + client.getSoldeTotal());
+        System.out.println("****************************************************");
         System.out.println("____________________________________________________");
     }
 }

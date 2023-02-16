@@ -58,10 +58,10 @@ public class FilesHandler implements FilesBasePaths {
 
     public static void seedComptes() {
         try {
-            Files.write(CLIENTS_PATH.toPath(), ("1;test;test;test@test.com;123456;2020-01-01\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(CLIENTS_PATH.toPath(), ("2;John;Doe;johndoe@test.com;123456;2020-01-01\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(CLIENTS_PATH.toPath(), ("3;Jane;Doe;janedoe@test.com;123456;2020-01-01\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(CLIENTS_PATH.toPath(), ("4;Jack;Doe;jackdoe@test.com;123456;2020-01-01\n").getBytes(), StandardOpenOption.APPEND);
+            Files.write(CLIENTS_PATH.toPath(), ("1;Client1;test;client@test.com;123456;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
+            Files.write(CLIENTS_PATH.toPath(), ("2;John;Doe;johndoe@test.com;123456;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
+            Files.write(CLIENTS_PATH.toPath(), ("3;Jane;Doe;janedoe@test.com;123456;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
+            Files.write(CLIENTS_PATH.toPath(), ("4;Jack;Doe;jackdoe@test.com;123456;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -69,14 +69,14 @@ public class FilesHandler implements FilesBasePaths {
 
     public static void seedClients() {
         try {
-            Files.write(COMPTES_PATH.toPath(), ("1;1;1000;2020-01-01\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(COMPTES_PATH.toPath(), ("2;1;2000;2020-01-01\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(COMPTES_PATH.toPath(), ("3;2;3000;2020-01-01\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(COMPTES_PATH.toPath(), ("4;2;4000;2020-01-01\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(COMPTES_PATH.toPath(), ("5;3;5000;2020-01-01\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(COMPTES_PATH.toPath(), ("6;3;6000;2020-01-01\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(COMPTES_PATH.toPath(), ("7;3;7000;2020-01-01\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(COMPTES_PATH.toPath(), ("8;4;8000;2020-01-01\n").getBytes(), StandardOpenOption.APPEND);
+            Files.write(COMPTES_PATH.toPath(), ("1;1;1000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
+            Files.write(COMPTES_PATH.toPath(), ("2;1;2000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
+            Files.write(COMPTES_PATH.toPath(), ("3;2;3000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
+            Files.write(COMPTES_PATH.toPath(), ("4;2;4000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
+            Files.write(COMPTES_PATH.toPath(), ("5;3;5000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
+            Files.write(COMPTES_PATH.toPath(), ("6;3;6000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
+            Files.write(COMPTES_PATH.toPath(), ("7;3;7000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
+            Files.write(COMPTES_PATH.toPath(), ("8;4;8000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
         } catch (IOException e) {
             e.printStackTrace();
         }

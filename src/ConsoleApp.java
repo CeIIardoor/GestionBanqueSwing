@@ -56,12 +56,15 @@ public class ConsoleApp {
                     System.out.println("Login ou mot de passe incorrect");
                 }
             } else if (choix == 2) {
+                System.out.println("******************************************************");
                 System.out.println("Affichage des logs");
+                System.out.println("******************************************************");
                 if (FilesHandler.LOGS_PATH.length() == 0) {
                     System.out.println("Aucun log");
                 } else {
                     FilesHandler.readLogs();
                 }
+                System.out.println("******************************************************");
 
             } else if (choix == 3) {
                 FilesHandler.flushLogs();
