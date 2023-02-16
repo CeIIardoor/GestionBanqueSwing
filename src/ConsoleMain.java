@@ -15,7 +15,7 @@ import View.MenuClient;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Main {
+public class ConsoleMain {
     public static void main(String[] args) throws FileNotFoundException {
 //        System.out.println("____________SETUP____________");
         Banque banque = new Banque("Dire Straits Bank", "direstraits@banque.com", 100);
@@ -76,7 +76,7 @@ public class Main {
                         ComptesDAO.writeCompte(compte, client.getId());
                     }
                 }
-
+                LogsDAO.writeLog("_______________________________________________________Fin Session\n");
                 System.out.println("Au revoir");
             } else {
                 System.out.println("Choix invalide");
