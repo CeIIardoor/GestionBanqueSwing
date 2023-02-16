@@ -1,4 +1,4 @@
-package View;
+package View.Console;
 
 public class MenuAuth {
     public static void afficherMenuAuth() {

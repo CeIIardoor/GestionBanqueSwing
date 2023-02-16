@@ -1,4 +1,4 @@
-package View;
+package View.Console;
 
 import DAO.LogsDAO;
 import Model.Banque;
@@ -6,7 +6,7 @@ import Model.Client;
 import Model.Compte;
 import Model.User;
 import Service.ServiceTransactionnel;
-import View.Interfaces.IMenuClient;
+import View.Console.Interfaces.IMenuClient;
 
 import java.util.Scanner;
 

@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef869a2e-b100-43cb-8dfe-fcf2c7a1621a" name="Changes" comment="" />
+    <list default="true" id="ef869a2e-b100-43cb-8dfe-fcf2c7a1621a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/Swing/Assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/Swing/Panels/Auth/LoginPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/Swing/Panels/Client/Index.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/Model/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/Model/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/Swing/MainFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/Swing/MainFacade.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/SwingMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/SwingMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConsoleMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConsoleMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Swing/MainFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/MainFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SwingMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Interfaces/IMenuAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Console/Interfaces/IMenuAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Interfaces/IMenuAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Console/Interfaces/IMenuAuth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Interfaces/IMenuClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Console/Interfaces/IMenuClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/MenuAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Console/MenuAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/MenuAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Console/MenuAuth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/MenuClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Console/MenuClient.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,12 +92,20 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="Swing" />
       <recent name="Service" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConsoleMain">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="ConsoleMain" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ConsoleMain" />
+      <module name="GestionBanque" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="GestionBanque" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -92,6 +119,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Main" />
       <item itemvalue="Application.SwingMain" />
       <item itemvalue="Application.ConsoleMain" />
     </list>
@@ -141,7 +169,7 @@
       <workItem from="1674829007246" duration="141000" />
       <workItem from="1675015490546" duration="1222000" />
       <workItem from="1676460141129" duration="177000" />
-      <workItem from="1676460407947" duration="23648000" />
+      <workItem from="1676460407947" duration="27862000" />
     </task>
     <task id="LOCAL-00001" summary="progress projet java (Dep Inj)">
       <created>1667492908381</created>
@@ -353,7 +381,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676505682720</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Adding Out build &amp; Intellij Files">
+      <created>1676505871078</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1676505871078</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Adding Out build &amp; Intellij Files">
+      <created>1676505958956</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1676505958956</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,7 +433,8 @@
     <MESSAGE value="Csv Loader + Seeder" />
     <MESSAGE value="V1.0 Console App" />
     <MESSAGE value="Adding Swing GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Swing GUI" />
+    <MESSAGE value="Adding Out build &amp; Intellij Files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Out build &amp; Intellij Files" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

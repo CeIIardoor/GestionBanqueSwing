@@ -15,7 +15,7 @@ public class Admin extends User{
 
     public static Admin getInstance() {
         if (admin == null) {
-            admin = new Admin("admin@admin.com", "admin", "admin");
+            admin = new Admin("admin@test.com", "123456", "admin");
         }
         return admin;
     }

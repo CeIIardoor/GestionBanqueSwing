@@ -8,9 +8,9 @@ import Model.Banque;
 import Model.Client;
 import Model.Compte;
 import Model.User;
-import View.MenuAdmin;
-import View.MenuAuth;
-import View.MenuClient;
+import View.Console.MenuAdmin;
+import View.Console.MenuAuth;
+import View.Console.MenuClient;
 
 import java.io.FileNotFoundException;
 import java.util.Scanner;
