@@ -13,4 +13,12 @@ public class LogsDAO {
             e.printStackTrace();
         }
     }
+
+    public static void clear() {
+        try {
+            Files.write(LOGS_PATH.toPath(), "".getBytes());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

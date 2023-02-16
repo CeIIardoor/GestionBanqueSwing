@@ -1,5 +1,7 @@
 package Model;
 
+import DAO.LogsDAO;
+
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Scanner;
@@ -74,9 +76,10 @@ public class Banque{
     }
 
     public void ajouterClient(Client client){
-        if (this.clients.size() < this.maxClients){
+        if (this.clients.size() < this.maxClients) {
             this.clients.add(client);
-//            System.out.println("Client " + client.getId() + " ajouté avec succès");
+            System.out.println("Client " + client.getId() + " ajouté avec succès");
+            LogsDAO.write("Ajout du client " + client.getId());
         } else {
             System.out.println("Impossible d'ajouter le client " + client.getId() + " : nombre max de clients atteint");
         }
@@ -86,8 +89,9 @@ public class Banque{
         if (this.clients.contains(client)) {
             this.clients.remove(client);
             System.out.println("Client " + client.getId() + " supprimé avec succès");
+            LogsDAO.write("Suppression du client " + client.getId());
         } else {
-            System.out.println("Impossible de supprimer le client " + client.getId());
+            System.out.println("Client Introuvable : Impossible de supprimer Client " + client.getEmail());
         }
     }
 

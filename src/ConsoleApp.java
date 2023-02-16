@@ -64,7 +64,7 @@ public class ConsoleApp {
                 System.out.println("******************************************************");
 
             } else if (choix == 3) {
-                FilesHandler.flushLogs();
+                FilesHandler.clearLogs();
                 System.out.println("Logs vidés");
 
             } else if (choix == 9) {

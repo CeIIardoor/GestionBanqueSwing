@@ -1,70 +1,81 @@
-Admin admin@test.com s'est connecté
-Le montant de 111.0 a été versé sur le compte 1
-Client client@test.com s'est connecté
-_______________________________________________________Fin Session
-
-Client client@test.com s'est connecté
-Client client@test.com s'est connecté
-Admin admin@test.com s'est connecté
-_______________________________________________________Fin Session
-
+Ajout du client 1
+Ajout du client 2
+Ajout du client 3
+Ajout du client 4
 Admin : admin@test.com logged in from Swing
-Admin : admin@test.com logged in from Swing
-Admin : admin@test.com logged in from Swing
-Admin : admin@test.com logged in from Swing
-Admin : admin@test.com logged in from Swing
-Affichage des infos de la banque
-Admin : admin@test.com logged in from Swing
-Affichage des infos de la banque
-Admin : admin@test.com logged in from Swing
-Affichage des infos de la banque
-Admin : admin@test.com logged in from Swing
-Affichage des infos de la banque
-Admin : admin@test.com logged in from Swing
-Affichage des infos de la banque
-Admin : admin@test.com logged in from Swing
-Affichage des infos des clients
-Admin : admin@test.com logged in from Swing
-Affichage des infos des clients
-Admin : admin@test.com logged in from Swing
-Affichage des infos de la banque
-Affichage des infos des clients
-Admin : admin@test.com logged in from Swing
-Affichage des infos des comptes
-Admin : admin@test.com logged in from Swing
-Affichage des infos des clients
-Admin : admin@test.com logged in from Swing
-Admin : admin@test.com logged in from Swing
-Affichage des infos des clients
-Affichage des infos de la banque
-Affichage des infos des clients
-Admin : admin@test.com logged in from Swing
+Ajout du client 1
+Ajout du client 2
+Ajout du client 3
+Ajout du client 4
 Admin : admin@test.com logged in from Swing
 _______________________________________________________Fin Session
 Admin : admin@test.com logged in from Swing
+Ajout du client 1
+Ajout du client 2
+Ajout du client 3
+Ajout du client 4
 Admin : admin@test.com logged in from Swing
+Ajout du client 1
+Ajout du client 2
+Ajout du client 3
+Ajout du client 4
 Admin : admin@test.com logged in from Swing
+Ajout du client 1
+Ajout du client 2
+Ajout du client 3
+Ajout du client 4
 Admin : admin@test.com logged in from Swing
+Ajout du client 1
+Ajout du client 2
+Ajout du client 3
+Ajout du client 4
 Admin : admin@test.com logged in from Swing
-Admin : admin@test.com logged in from Swing
-Admin : admin@test.com logged in from Swing
-Ouverture de la fenêtre CRUD
-Ouverture de la fenêtre CRUD
-Ouverture de la fenêtre CRUD
-Admin : admin@test.com logged in from Swing
-Ouverture de la fenêtre CRUD
-Admin : admin@test.com logged in from Swing
-Ouverture de la fenêtre CRUD
 _______________________________________________________Fin Session
 Admin : admin@test.com logged in from Swing
-Admin : admin@test.com logged in from Swing
-Ouverture de la fenêtre CRUD
-Admin : admin@test.com logged in from Swing
-Ouverture de la fenêtre CRUD
-Admin : admin@test.com logged in from Swing
-Ouverture de la fenêtre CRUD
-Ouverture de la fenêtre CRUD
 _______________________________________________________Fin Session
+Ajout du client 1
+Ajout du client 2
+Ajout du client 3
+Ajout du client 4
 Admin : admin@test.com logged in from Swing
+Ajout du client 1
+Ajout du client 2
+Ajout du client 3
+Ajout du client 4
 Admin : admin@test.com logged in from Swing
-Ouverture de la fenêtre CRUD
+_______________________________________________________Fin Session
+Ajout du client 1
+Ajout du client 2
+Ajout du client 3
+Ajout du client 4
+Admin : admin@test.com logged in from Swing
+Ajout du client 1
+Ajout du client 2
+Ajout du client 3
+Ajout du client 4
+Admin : admin@test.com logged in from Swing
+Ajout du client 1
+Ajout du client 2
+Ajout du client 3
+Ajout du client 4
+Admin : admin@test.com logged in from Swing
+Ajout du client 1
+Ajout du client 2
+Ajout du client 3
+Ajout du client 4
+Admin : admin@test.com logged in from Swing
+Ajout du client 1
+Ajout du client 2
+Ajout du client 3
+Ajout du client 4
+Admin : admin@test.com logged in from Swing
+Ajout du client 1
+Ajout du client 2
+Ajout du client 3
+Ajout du client 4
+Admin : admin@test.com logged in from Swing
+Ajout du client 1
+Ajout du client 2
+Ajout du client 3
+Ajout du client 4
+Admin : admin@test.com logged in from Swing

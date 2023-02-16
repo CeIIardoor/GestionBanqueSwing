@@ -4,6 +4,7 @@ import DAO.LogsDAO;
 import Model.Banque;
 import Model.Client;
 import View.Swing.Frames.Admin.CRUDFrame;
+import View.Swing.Frames.Admin.TransactionnelFrame;
 import View.Swing.Frames.Auth.LoginFrame;
 
 import javax.swing.*;
@@ -26,10 +27,11 @@ public class AdminPanel extends JPanel {
         JButton btnInfoBanque = new JButton("Afficher Infos Banque");
         StringBuilder infoBanque = new StringBuilder();
         infoBanque.append("****************************************\n")
-                .append("Nom: ").append(banque.getNomAgence()).append("\n").append("Email: ").append(banque.getEmailAgence()).append("\n")
+                .append("Nom: ").append(banque.getNomAgence()).append("\n").append("Email: ")
+                .append(banque.getEmailAgence()).append("\n")
                 .append("****************************************\n");
         btnInfoBanque.addActionListener(e -> {
-            LogsDAO.write("Affichage des infos de la banque");
+//            LogsDAO.write("Affichage des infos de la banque");
             JOptionPane.showMessageDialog(null, infoBanque, "Infos Banque", JOptionPane.INFORMATION_MESSAGE);
         });
         buttonPanel.add(btnInfoBanque);
@@ -42,19 +44,24 @@ public class AdminPanel extends JPanel {
                     .append("****************************************\n");
         }
         btnInfoClients.addActionListener(e -> {
-            LogsDAO.write("Affichage des infos des clients");
+//            LogsDAO.write("Affichage des infos des clients");
             JOptionPane.showMessageDialog(null, infoClients, "Infos Clients", JOptionPane.INFORMATION_MESSAGE);
         });
         buttonPanel.add(btnInfoClients);
 
-        JButton btnServiceCrud = new JButton("Service CRUD");
+        JButton btnServiceCrud = new JButton("Service CRUD Clients");
         btnServiceCrud.addActionListener(e -> {
-            LogsDAO.write("Ouverture de la fenêtre CRUD");
+//            LogsDAO.write("Ouverture de la fenêtre CRUD");
             new CRUDFrame(banque);
             (SwingUtilities.getWindowAncestor(this)).dispose();
         });
         buttonPanel.add(btnServiceCrud);
         JButton btnServiceTransactionnel = new JButton("Service Transactionnel");
+        btnServiceTransactionnel.addActionListener(e -> {
+//            LogsDAO.write("Ouverture de la fenêtre Transactionnel");
+            new TransactionnelFrame(banque);
+            (SwingUtilities.getWindowAncestor(this)).dispose();
+        });
         buttonPanel.add(btnServiceTransactionnel);
 
         // Create a panel for the logout button

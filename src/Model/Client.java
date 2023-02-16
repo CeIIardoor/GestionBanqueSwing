@@ -97,7 +97,7 @@ public class Client extends User {
             super.setLogin(email);
         } while (!this.email.matches("^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\\.[a-z]{2,4}$"));
         do {
-            System.out.println("Entrer le MDP du client (>=8 caractères) : ");
+            System.out.println("Entrer le MDP du client (>=6 caractères) : ");
             super.setPassword(new Scanner(System.in).nextLine());
         } while (!super.getPassword().matches("[a-zA-Z0-9._-]{8,}"));
         super.setRole("client");

@@ -5,9 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef869a2e-b100-43cb-8dfe-fcf2c7a1621a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Validator/FormValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/Swing/Frames/Admin/TransactionnelFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/Swing/Panels/Admin/TransactionnelPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/DAO/FilesDAO/FilesHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/DAO/FilesDAO/FilesHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/DAO/LogsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/DAO/LogsDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/DB/comptes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/DB/comptes.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/DB/logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/DB/logs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/Model/Banque.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/Model/Banque.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/Model/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/Model/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/Validator/FormException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/Validator/LoginFormValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConsoleApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConsoleApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/FilesDAO/FilesHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/FilesDAO/FilesHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/LogsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/LogsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DB/comptes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/comptes.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DB/logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/logs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Banque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Banque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validator/FormException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validator/LoginFormValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Swing/Panels/Admin/AdminPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Panels/Admin/AdminPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/Swing/Panels/Admin/CRUDPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Panels/Admin/CRUDPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,29 +67,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/lenovo/Desktop/Repos/GestionBanque&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TODO_SCOPE": "All Places",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "last_opened_file_path": "C:/Users/lenovo/Desktop/Repos/GestionBanque",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="Push.Settings">
     <force-push-targets>
       <force-push-target remote-path="origin" branch="master" />
@@ -157,7 +176,7 @@
       <workItem from="1676460141129" duration="177000" />
       <workItem from="1676460407947" duration="28935000" />
       <workItem from="1676511934810" duration="945000" />
-      <workItem from="1676547394710" duration="16933000" />
+      <workItem from="1676547394710" duration="29163000" />
     </task>
     <task id="LOCAL-00001" summary="progress projet java (Dep Inj)">
       <created>1667492908381</created>
@@ -425,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676563052454</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="CRUD Frame">
+      <created>1676566245221</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1676566245221</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

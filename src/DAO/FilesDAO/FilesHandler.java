@@ -2,6 +2,7 @@ package DAO.FilesDAO;
 
 import DAO.ClientsDAO;
 import DAO.ComptesDAO;
+import DAO.LogsDAO;
 import Model.Banque;
 import Model.Client;
 import Model.Compte;
@@ -125,12 +126,8 @@ public class FilesHandler implements FilesBasePaths {
         }
     }
 
-    public static void flushLogs() {
-        try {
-            Files.write(LOGS_PATH.toPath(), "".getBytes());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public static void clearLogs() {
+        LogsDAO.clear();
     }
 
     public static void seed() {
@@ -144,6 +141,17 @@ public class FilesHandler implements FilesBasePaths {
                 Files.lines(LOGS_PATH.toPath()).forEach(System.out::println);
             } catch (IOException e) {
                 e.printStackTrace();
+            }
+        }
+    }
+
+    public static void update(Banque banque) {
+        FilesHandler.flush();
+        FilesHandler.init();
+        for (Client client : banque.getClients()) {
+            ClientsDAO.writeClient(client);
+            for (Compte compte : client.getComptes()) {
+                ComptesDAO.writeCompte(compte, client.getId());
             }
         }
     }
