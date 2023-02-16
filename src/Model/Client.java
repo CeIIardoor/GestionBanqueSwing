@@ -144,7 +144,7 @@ public class Client extends User {
 
     public Compte getCompteByID(int numCompte) {
         for (Compte compte : comptes) {
-            if (compte.getIdCompte() == numCompte) {
+            if (compte.getId() == numCompte) {
                 return compte;
             }
         }

@@ -69,6 +69,8 @@ public class FilesHandler implements FilesBasePaths {
             Files.write(CLIENTS_PATH.toPath(), ("2;John;Doe;johndoe@test.com;123456;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
             Files.write(CLIENTS_PATH.toPath(), ("3;Jane;Doe;janedoe@test.com;123456;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
             Files.write(CLIENTS_PATH.toPath(), ("4;Jack;Doe;jackdoe@test.com;123456;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
+            Files.write(CLIENTS_PATH.toPath(), ("5;Jill;Doe;Jilldoe@test.com;123456;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
+            Files.write(CLIENTS_PATH.toPath(), ("6;Joe;Doe;Joedoe@test.com;123456;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -84,6 +86,14 @@ public class FilesHandler implements FilesBasePaths {
             Files.write(COMPTES_PATH.toPath(), ("6;3;6000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
             Files.write(COMPTES_PATH.toPath(), ("7;3;7000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
             Files.write(COMPTES_PATH.toPath(), ("8;4;8000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
+            Files.write(COMPTES_PATH.toPath(), ("9;4;9000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
+            Files.write(COMPTES_PATH.toPath(), ("10;5;10000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
+            Files.write(COMPTES_PATH.toPath(), ("11;5;11000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
+            Files.write(COMPTES_PATH.toPath(), ("12;5;12000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
+            Files.write(COMPTES_PATH.toPath(), ("13;6;13000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
+            Files.write(COMPTES_PATH.toPath(), ("14;6;14000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
+            Files.write(COMPTES_PATH.toPath(), ("15;6;15000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
+            Files.write(COMPTES_PATH.toPath(), ("16;6;16000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -141,17 +151,6 @@ public class FilesHandler implements FilesBasePaths {
                 Files.lines(LOGS_PATH.toPath()).forEach(System.out::println);
             } catch (IOException e) {
                 e.printStackTrace();
-            }
-        }
-    }
-
-    public static void update(Banque banque) {
-        FilesHandler.flush();
-        FilesHandler.init();
-        for (Client client : banque.getClients()) {
-            ClientsDAO.writeClient(client);
-            for (Compte compte : client.getComptes()) {
-                ComptesDAO.writeCompte(compte, client.getId());
             }
         }
     }

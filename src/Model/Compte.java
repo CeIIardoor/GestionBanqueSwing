@@ -13,7 +13,7 @@ public class Compte {
     private final ArrayList<String> journalisation;
     private Client proprietaire;
 
-    public int getIdCompte() {
+    public int getId() {
         return idCompte;
     }
 
@@ -104,7 +104,7 @@ public class Compte {
                 && proprietaire.equals(c.proprietaire);
     }
 
-    public void setIdCompte(int idCompte) {
+    public void setId(int idCompte) {
         this.idCompte = idCompte;
     }
 

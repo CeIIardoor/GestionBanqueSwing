@@ -3,7 +3,9 @@ package Service.Interfaces;
 import Model.Compte;
 
 public interface IServiceTransactionnel {
-    void verser(double montant, Compte c);
-    void retirer(double montant, Compte c);
-    void effectuerUnVirement(double montant, Compte src, Compte des);
+    boolean deposer(double montant, Compte c);
+
+    boolean retirer(double montant, Compte c);
+
+    boolean effectuerVirement(double montant, Compte src, Compte des);
 }

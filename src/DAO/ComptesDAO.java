@@ -24,7 +24,7 @@ public class ComptesDAO {
             String dateCreation = data[3];
             Client proprietaire = banque.getClientById(idClient);
             Compte compte = new Compte(proprietaire, solde);
-            compte.setIdCompte(idCompte);
+            compte.setId(idCompte);
             compte.setDateCreation(dateCreation);
             proprietaire.ajouterCompte(compte);
         }
@@ -34,7 +34,7 @@ public class ComptesDAO {
         File comptescsv = new File(FilesBasePaths.COMPTES_PATH.toURI());
         try {
             FileWriter writer = new FileWriter(comptescsv, true);
-            String sb = compte.getIdCompte() + ";" +
+            String sb = compte.getId() + ";" +
                     idClient + ";" +
                     compte.getSolde() + ";" +
                     compte.getDateCreation() +

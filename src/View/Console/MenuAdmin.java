@@ -91,7 +91,7 @@ public class MenuAdmin implements IMenuAdmin {
                             Compte compteACrediter = ServiceCRUD.getCompteById(compteID);
                             System.out.println("Entrer le montant a crediter");
                             double montant = new Scanner(System.in).nextDouble();
-                            serviceTransactionnel.verser(montant, compteACrediter);
+                            serviceTransactionnel.deposer(montant, compteACrediter);
                             break;
                         case 2:
                             System.out.println("Entrer l'ID du compte a debiter");
@@ -110,7 +110,7 @@ public class MenuAdmin implements IMenuAdmin {
                             Compte compteACrediter2 = ServiceCRUD.getCompteById(compteID4);
                             System.out.println("Entrer le montant a transferer");
                             double montant3 = new Scanner(System.in).nextDouble();
-                            serviceTransactionnel.effectuerUnVirement(montant3, compteADebiter2, compteACrediter2);
+                            serviceTransactionnel.effectuerVirement(montant3, compteADebiter2, compteACrediter2);
                             break;
                         case 0:
                             break;

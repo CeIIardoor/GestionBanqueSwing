@@ -85,18 +85,18 @@ public class MenuClient implements IMenuClient {
                 case 1:
                     System.out.println("Entrer le montant à déposer");
                     double montant = new Scanner(System.in).nextDouble();
-                    serviceTransactionnel.verser(montant, compte);
-                    LogsDAO.write("Dépôt de " + montant + " sur le compte " + compte.getIdCompte());
+                    serviceTransactionnel.deposer(montant, compte);
+                    LogsDAO.write("Dépôt de " + montant + " sur le compte " + compte.getId());
                     break;
                 case 2:
                     System.out.println("Entrer le montant à retirer");
                     montant = new Scanner(System.in).nextDouble();
                     serviceTransactionnel.retirer(montant, compte);
-                    LogsDAO.write("Retrait de " + montant + " sur le compte " + compte.getIdCompte());
+                    LogsDAO.write("Retrait de " + montant + " sur le compte " + compte.getId());
                     break;
                 case 3:
                     banque.getComptes().forEach(
-                            c -> System.out.println(c.getIdCompte() + "- " + c.getProprietaire().getNom()
+                            c -> System.out.println(c.getId() + "- " + c.getProprietaire().getNom()
                             ));
                     System.out.println("Entrer le numéro du compte à créditer");
                     int numCompte = new Scanner(System.in).nextInt();
@@ -104,8 +104,8 @@ public class MenuClient implements IMenuClient {
                     if (compteCredite != null) {
                         System.out.println("Entrer le montant à virer");
                         montant = new Scanner(System.in).nextDouble();
-                        serviceTransactionnel.effectuerUnVirement(montant, compte, compteCredite);
-                        LogsDAO.write("Virement de " + montant + " sur le compte " + compte.getIdCompte());
+                        serviceTransactionnel.effectuerVirement(montant, compte, compteCredite);
+                        LogsDAO.write("Virement de " + montant + " sur le compte " + compte.getId());
                     } else {
                         System.out.println("Compte introuvable");
                     }
@@ -147,7 +147,7 @@ public class MenuClient implements IMenuClient {
         Client client = (Client) user;
         System.out.println("____________________Mes opérations______________________");
         for (int i = 0; i < client.getComptes().size(); i++) {
-            System.out.println("Compte " + client.getComptes().get(i).getIdCompte());
+            System.out.println("Compte " + client.getComptes().get(i).getId());
             System.out.println("Solde: " + client.getComptes().get(i).getSolde());
             System.out.println("Opérations: ");
             for (int j = 0; j < client.getComptes().get(i).getJournalisation().size(); j++) {

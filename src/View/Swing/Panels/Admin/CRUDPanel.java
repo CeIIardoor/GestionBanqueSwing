@@ -83,7 +83,7 @@ public class CRUDPanel extends JPanel {
                                     new Client(textFieldNom.getText(), textFieldPrenom.getText(),
                                             textFieldEmail.getText(), passwordValue));
 
-                            FilesHandler.update(banque);
+                            FilesHandler.save(banque);
                             CRUDPanel.this.removeAll();
                             CRUDPanel.this.add(new CRUDPanel(banque));
                             CRUDPanel.this.revalidate();
@@ -133,7 +133,7 @@ public class CRUDPanel extends JPanel {
                         client.setEmail(textFieldEmail.getText());
                         client.setPassword(passwordValue);
 
-                        FilesHandler.update(banque);
+                        FilesHandler.save(banque);
                         CRUDPanel.this.removeAll();
                         CRUDPanel.this.add(new CRUDPanel(banque));
                         CRUDPanel.this.revalidate();
@@ -157,7 +157,7 @@ public class CRUDPanel extends JPanel {
                         "Supprimer Client", JOptionPane.OK_CANCEL_OPTION);
                 if (result == JOptionPane.OK_OPTION) {
                     banque.supprimerClient(client);
-                    FilesHandler.update(banque);
+                    FilesHandler.save(banque);
                     CRUDPanel.this.removeAll();
                     CRUDPanel.this.add(new CRUDPanel(banque));
                     CRUDPanel.this.revalidate();

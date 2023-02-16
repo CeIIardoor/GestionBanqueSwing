@@ -59,34 +59,34 @@ public class ServiceCRUD {
         System.out.println("Client " + client.getId() + " créé et ajouté à " + banque.getNomAgence());
     }
 
-    public void lierCompteAuClient(int idClient, int idCompte){
-        Client client = getClientById(idClient);
-        Compte compte = getCompteById(idCompte);
-        if (client != null && compte != null){
-            if (client.getComptes().size() < client.getMaxComptes()){
-                client.ajouterCompte(compte);
-                System.out.println("Compte " + compte.getIdCompte() + " lié au client " + client.getId());
-            } else {
-                System.out.println("Impossible de lier le compte " + compte.getIdCompte() + " au client " + client.getId() + " : nombre max de comptes atteint");
-            }
-        } else {
-            System.out.println("Compte ou client inexistant");
-        }
-    }
-
     public static Compte getCompteById(int idCompte) {
         for (Compte compte : banque.getComptes()) {
-            if (compte.getIdCompte() == idCompte) {
+            if (compte.getId() == idCompte) {
                 return compte;
             }
         }
         return null;
     }
 
+    public void lierCompteAuClient(int idClient, int idCompte){
+        Client client = getClientById(idClient);
+        Compte compte = getCompteById(idCompte);
+        if (client != null && compte != null){
+            if (client.getComptes().size() < client.getMaxComptes()){
+                client.ajouterCompte(compte);
+                System.out.println("Compte " + compte.getId() + " lié au client " + client.getId());
+            } else {
+                System.out.println("Impossible de lier le compte " + compte.getId() + " au client " + client.getId() + " : nombre max de comptes atteint");
+            }
+        } else {
+            System.out.println("Compte ou client inexistant");
+        }
+    }
+
     public Compte chercherUnCompte(int idCompte){
         Compte compte = getCompteById(idCompte);
         if (compte != null){
-            System.out.println("Compte " + compte.getIdCompte() + " trouvé");
+            System.out.println("Compte " + compte.getId() + " trouvé");
             return compte;
         } else {
             System.out.println("Compte inexistant");
@@ -108,7 +108,7 @@ public class ServiceCRUD {
     public void consulterDetailCompte(int idCompte){
         Compte compte = chercherUnCompte(idCompte);
         if (compte != null){
-            System.out.println("Détail du compte " + compte.getIdCompte() + " :");
+            System.out.println("Détail du compte " + compte.getId() + " :");
             System.out.println(compte);
         } else {
             System.out.println("Compte inexistant");
@@ -129,11 +129,11 @@ public class ServiceCRUD {
         Compte compteAModifier = getCompteById(idCompte);
         if (compteAModifier != null){
             do {
-                System.out.println("Saisir le nouveau solde du compte " + compteAModifier.getIdCompte() + " :");
+                System.out.println("Saisir le nouveau solde du compte " + compteAModifier.getId() + " :");
                 double s = new Scanner(System.in).nextDouble();
                 compteAModifier.setSolde(s);
             } while (compteAModifier.getSolde() < 0);
-            System.out.println("Compte " + compteAModifier.getIdCompte() + " modifié");
+            System.out.println("Compte " + compteAModifier.getId() + " modifié");
         } else {
             System.out.println("Compte inexistant");
         }
@@ -161,7 +161,7 @@ public class ServiceCRUD {
         Compte compte = getCompteById(idCompte);
         if (compte != null){
             banque.getComptes().remove(compte);
-            System.out.println("Compte " + compte.getIdCompte() + " supprimé");
+            System.out.println("Compte " + compte.getId() + " supprimé");
         } else {
             System.out.println("Compte inexistant");
         }

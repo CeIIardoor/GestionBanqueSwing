@@ -98,7 +98,7 @@ public class Banque{
     public Compte getCompteById(int numCompte) {
         for (Client client : clients) {
             for (Compte compte : client.getComptes()) {
-                if (compte.getIdCompte() == numCompte) {
+                if (compte.getId() == numCompte) {
                     return compte;
                 }
             }
