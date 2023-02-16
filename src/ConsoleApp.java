@@ -15,7 +15,7 @@ import View.Console.MenuClient;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class ConsoleMain {
+public class ConsoleApp {
     public static void main(String[] args) throws FileNotFoundException {
 //        System.out.println("____________SETUP____________");
         Banque banque = new Banque("Dire Straits Bank", "direstraits@banque.com", 100);
