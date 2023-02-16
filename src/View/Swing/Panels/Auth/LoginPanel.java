@@ -58,6 +58,8 @@ public class LoginPanel extends JPanel {
         loginButton.setBorder(BorderFactory.createLineBorder(Color.GRAY, 1));
         loginButton.setCursor(new Cursor(Cursor.HAND_CURSOR));
         loginButton.setFocusPainted(false);
+
+        // add action to button
         buttonPanel.add(loginButton);
 
         // Add components to main panel
