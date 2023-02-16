@@ -20,6 +20,7 @@ public class ConsoleApp {
 //        System.out.println("____________SETUP____________");
         Banque banque = new Banque("Dire Straits Bank", "direstraits@banque.com", 100);
 //      FilesHandler.flush(); // Pour vider la base de données
+//      FilesHandler.drop(); // Pour supprimer la base de données
 
         if (!FilesHandler.BASE_FOLDER.toFile().exists()) { // Si le dossier DB n'existe pas
             FilesHandler.init();
@@ -45,11 +46,11 @@ public class ConsoleApp {
                 String password = new Scanner(System.in).nextLine();
                 User currentUser = authController.authenticate(login, password);
                 if (currentUser != null && currentUser.getRole().equals("admin")) {
-                    LogsDAO.writeLog("Admin " + currentUser.getLogin() + " s'est connecté");
+                    LogsDAO.write("Admin " + currentUser.getLogin() + " s'est connecté");
                     MenuAdmin menuAdmin = new MenuAdmin(banque);
                     menuAdmin.afficherMenuPrincipale();
                 } else if (currentUser != null && currentUser.getRole().equals("client")) {
-                    LogsDAO.writeLog("Client " + currentUser.getLogin() + " s'est connecté");
+                    LogsDAO.write("Client " + currentUser.getLogin() + " s'est connecté");
                     MenuClient menuClient = new MenuClient(banque, currentUser);
                     menuClient.afficherMenuPrincipale();
                 } else {
@@ -79,7 +80,7 @@ public class ConsoleApp {
                         ComptesDAO.writeCompte(compte, client.getId());
                     }
                 }
-                LogsDAO.writeLog("_______________________________________________________Fin Session\n");
+                LogsDAO.write("_______________________________________________________Fin Session");
                 System.out.println("Au revoir");
             } else {
                 System.out.println("Choix invalide");

@@ -1,9 +1,10 @@
 package View.Swing.Panels.Auth;
 
 import Controller.AuthController;
+import DAO.LogsDAO;
 import Model.Banque;
 import Model.User;
-import View.Swing.Frames.AdminFrame;
+import View.Swing.Frames.Admin.AdminFrame;
 
 import javax.swing.*;
 import java.awt.*;
@@ -37,6 +38,7 @@ public class LoginPanel extends JPanel {
         c.weightx = 1.0;
         JLabel emailLabel = new JLabel("Email:");
         JTextField emailField = new JTextField(10);
+        emailField.setText("admin@test.com");
         emailField.setPreferredSize(new Dimension(0, 25));
         inputPanel.add(emailLabel, c);
         c.gridx = 1;
@@ -47,6 +49,7 @@ public class LoginPanel extends JPanel {
         c.weightx = 1.0;
         JLabel passwordLabel = new JLabel("Password:");
         JPasswordField passwordField = new JPasswordField(10);
+        passwordField.setText("123456");
         passwordField.setPreferredSize(new Dimension(0, 25));
         inputPanel.add(passwordLabel, c);
         c.gridx = 1;
@@ -71,8 +74,9 @@ public class LoginPanel extends JPanel {
             User currentUser = authController.authenticate(email, password);
             if (currentUser != null) {
                 if (currentUser.getRole().equals("admin")) {
-                    System.out.println("Hello, Admin!");
+                    LogsDAO.write("Admin : " + currentUser.getLogin() + " logged in from Swing");
                     new AdminFrame(banque);
+                    (SwingUtilities.getWindowAncestor(this)).dispose();
                 } else if (currentUser.getRole().equals("client")) {
                     System.out.println("Hello, Client!");
                 }

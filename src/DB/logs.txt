@@ -8,3 +8,17 @@ Client client@test.com s'est connecté
 Admin admin@test.com s'est connecté
 _______________________________________________________Fin Session
 
+Admin : admin@test.com logged in from Swing
+Admin : admin@test.com logged in from Swing
+Admin : admin@test.com logged in from Swing
+Admin : admin@test.com logged in from Swing
+Admin : admin@test.com logged in from Swing
+Affichage des infos de la banque
+Admin : admin@test.com logged in from Swing
+Affichage des infos de la banque
+Admin : admin@test.com logged in from Swing
+Affichage des infos de la banque
+Admin : admin@test.com logged in from Swing
+Affichage des infos de la banque
+Admin : admin@test.com logged in from Swing
+Affichage des infos de la banque

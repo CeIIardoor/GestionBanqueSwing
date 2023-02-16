@@ -97,6 +97,16 @@ public class FilesHandler implements FilesBasePaths {
         }
     }
 
+    public static void drop() {
+        try {
+            Files.deleteIfExists(CLIENTS_PATH.toPath());
+            Files.deleteIfExists(COMPTES_PATH.toPath());
+            Files.deleteIfExists(LOGS_PATH.toPath());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static void flushLogs() {
         try {
             Files.write(LOGS_PATH.toPath(), "".getBytes());

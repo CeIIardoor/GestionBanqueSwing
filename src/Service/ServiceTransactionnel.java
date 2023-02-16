@@ -17,7 +17,7 @@ public class ServiceTransactionnel implements IServiceTransactionnel {
             c.setSolde(c.getSolde() + montant);
             c.getJournalisation().add("Versement de " + montant + "dh");
             System.out.println("Le montant de " + montant + " a été versé sur le compte " + c.getIdCompte());
-            LogsDAO.writeLog("Le montant de " + montant + " a été versé sur le compte " + c.getIdCompte());
+            LogsDAO.write("Le montant de " + montant + " a été versé sur le compte " + c.getIdCompte());
         } else {
             System.out.println("Le montant doit être supérieur à 0");
         }
@@ -29,7 +29,7 @@ public class ServiceTransactionnel implements IServiceTransactionnel {
                 c.setSolde(c.getSolde() - montant);
                 c.getJournalisation().add("Retrait de " + montant + "dh");
                 System.out.println("Le montant de " + montant + " a été retiré du compte " + c.getIdCompte());
-                LogsDAO.writeLog("Le montant de " + montant + " a été retiré du compte " + c.getIdCompte());
+                LogsDAO.write("Le montant de " + montant + " a été retiré du compte " + c.getIdCompte());
             } else {
                 System.out.println("Le montant à retirer est supérieur au solde du compte");
             }
@@ -46,7 +46,7 @@ public class ServiceTransactionnel implements IServiceTransactionnel {
                 src.getJournalisation().add("Virement de " + montant + "dh vers le compte " + des.getIdCompte());
                 des.getJournalisation().add("Virement de " + montant + "dh du compte " + src.getIdCompte());
                 System.out.println("Le montant de " + montant + " a été viré du compte " + src.getIdCompte() + " vers le compte " + des.getIdCompte());
-                LogsDAO.writeLog("Le montant de " + montant + " a été viré du compte " + src.getIdCompte() + " vers le compte " + des.getIdCompte());
+                LogsDAO.write("Le montant de " + montant + " a été viré du compte " + src.getIdCompte() + " vers le compte " + des.getIdCompte());
             } else {
                 System.out.println("Le montant à virer est supérieur au solde du compte");
             }
