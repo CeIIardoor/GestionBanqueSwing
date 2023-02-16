@@ -1,4 +1,0 @@
-Admin : admin@test.com logged in from Swing
-Admin : admin@test.com logged in from Swing
-Admin : admin@test.com logged in from Swing
-Admin : admin@test.com logged in from Swing

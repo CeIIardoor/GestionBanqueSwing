@@ -1,6 +1,7 @@
 package View.Swing.Panels.Auth;
 
 import Controller.AuthController;
+import DAO.FilesDAO.FilesHandler;
 import DAO.LogsDAO;
 import Model.Banque;
 import Model.User;
@@ -85,6 +86,25 @@ public class LoginPanel extends JPanel {
             }
         });
         buttonPanel.add(loginButton);
+
+        JButton btnResetDB = new JButton("Reset DB");
+        btnResetDB.setBackground(new Color(0xFF1E1E));
+        btnResetDB.setForeground(Color.WHITE);
+        btnResetDB.setFont(new Font("Roboto", Font.BOLD, 16));
+        btnResetDB.setPreferredSize(new Dimension(150, 50));
+        btnResetDB.setBorder(BorderFactory.createLineBorder(Color.GRAY, 1));
+        btnResetDB.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        btnResetDB.setFocusPainted(false);
+        btnResetDB.addActionListener(e -> {
+            int dialogResult = JOptionPane.showConfirmDialog(null, "Cette opération va fermer l'application, Continuer ?", "Warning", JOptionPane.YES_NO_OPTION);
+            if (dialogResult == JOptionPane.YES_OPTION) {
+                FilesHandler.drop();
+                SwingUtilities.invokeLater(() -> {
+                    (SwingUtilities.getWindowAncestor(this)).dispose();
+                });
+            }
+        });
+        buttonPanel.add(btnResetDB);
 
         // Add components to main panel
         add(titlePanel, BorderLayout.NORTH);

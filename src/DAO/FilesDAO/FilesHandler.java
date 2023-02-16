@@ -12,6 +12,7 @@ import java.nio.file.Files;
 import java.nio.file.StandardOpenOption;
 
 public class FilesHandler implements FilesBasePaths {
+
     static void createBasePath() {
         if (!BASE_FOLDER.toFile().exists()) {
             if (BASE_FOLDER.toFile().mkdir()) {
@@ -131,6 +132,7 @@ public class FilesHandler implements FilesBasePaths {
             Files.deleteIfExists(CLIENTS_PATH.toPath());
             Files.deleteIfExists(COMPTES_PATH.toPath());
             Files.deleteIfExists(LOGS_PATH.toPath());
+            Files.deleteIfExists(BASE_FOLDER);
         } catch (IOException e) {
             e.printStackTrace();
         }
