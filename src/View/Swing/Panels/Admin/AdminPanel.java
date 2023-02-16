@@ -3,6 +3,7 @@ package View.Swing.Panels.Admin;
 import DAO.LogsDAO;
 import Model.Banque;
 import Model.Client;
+import View.Swing.Frames.Admin.CRUDFrame;
 import View.Swing.Frames.Auth.LoginFrame;
 
 import javax.swing.*;
@@ -21,34 +22,40 @@ public class AdminPanel extends JPanel {
         titlePanel.add(titleLabel);
 
         // Create a panel for the buttons
-        JPanel buttonPanel = new JPanel(new GridLayout(2, 4));
+        JPanel buttonPanel = new JPanel(new GridLayout(2, 2));
         JButton btnInfoBanque = new JButton("Afficher Infos Banque");
         StringBuilder infoBanque = new StringBuilder();
         infoBanque.append("****************************************\n")
                 .append("Nom: ").append(banque.getNomAgence()).append("\n").append("Email: ").append(banque.getEmailAgence()).append("\n")
                 .append("****************************************\n");
-        for (Client client : banque.getClients()) {
-            infoBanque.append("\n").append("Nom: ").append(client.getNom()).append("\n").append("Email: ")
-                    .append(client.getEmail()).append("\n").append("Solde Total : ").append(client.getSoldeTotal())
-                    .append("\n").append("Nombre de comptes: ").append(client.getComptes().size()).append("\n")
-                    .append("****************************************\n");
-        }
         btnInfoBanque.addActionListener(e -> {
-            LogsDAO logsDAO = new LogsDAO();
             LogsDAO.write("Affichage des infos de la banque");
             JOptionPane.showMessageDialog(null, infoBanque, "Infos Banque", JOptionPane.INFORMATION_MESSAGE);
         });
         buttonPanel.add(btnInfoBanque);
         JButton btnInfoClients = new JButton("Afficher Infos Clients");
+        StringBuilder infoClients = new StringBuilder();
+        for (Client client : banque.getClients()) {
+            infoClients.append("\n").append("Nom: ").append(client.getNom()).append("\n").append("Email: ")
+                    .append(client.getEmail()).append("\n").append("Solde Total : ").append(client.getSoldeTotal())
+                    .append("\n").append("Nombre de comptes: ").append(client.getComptes().size()).append("\n")
+                    .append("****************************************\n");
+        }
+        btnInfoClients.addActionListener(e -> {
+            LogsDAO.write("Affichage des infos des clients");
+            JOptionPane.showMessageDialog(null, infoClients, "Infos Clients", JOptionPane.INFORMATION_MESSAGE);
+        });
         buttonPanel.add(btnInfoClients);
-        JButton btnInfoComptes = new JButton("Afficher Infos Comptes");
-        buttonPanel.add(btnInfoComptes);
+
         JButton btnServiceCrud = new JButton("Service CRUD");
+        btnServiceCrud.addActionListener(e -> {
+            LogsDAO.write("Ouverture de la fenêtre CRUD");
+            new CRUDFrame(banque);
+            (SwingUtilities.getWindowAncestor(this)).dispose();
+        });
         buttonPanel.add(btnServiceCrud);
         JButton btnServiceTransactionnel = new JButton("Service Transactionnel");
         buttonPanel.add(btnServiceTransactionnel);
-        JButton btnServiceUtilitaire = new JButton("Service Utilitaire");
-        buttonPanel.add(btnServiceUtilitaire);
 
         // Create a panel for the logout button
         JPanel logoutPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT));
@@ -61,12 +68,9 @@ public class AdminPanel extends JPanel {
         logoutButton.setCursor(new Cursor(Cursor.HAND_CURSOR));
         logoutButton.setFocusPainted(false);
         logoutButton.addActionListener(e -> {
-            int dialogResult = JOptionPane.showConfirmDialog(null, "Are you sure you want to logout?", "Logout", JOptionPane.YES_NO_OPTION);
-            if (dialogResult == JOptionPane.YES_OPTION) {
-                new LoginFrame(banque);
-                (SwingUtilities.getWindowAncestor(this)).dispose();
-                LogsDAO.write("_______________________________________________________Fin Session");
-            }
+            new LoginFrame(banque);
+            (SwingUtilities.getWindowAncestor(this)).dispose();
+            LogsDAO.write("_______________________________________________________Fin Session");
         });
         logoutPanel.add(logoutButton);
 

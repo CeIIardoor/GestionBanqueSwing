@@ -20,3 +20,30 @@ Admin : admin@test.com logged in from Swing
 Affichage des infos de la banque
 Admin : admin@test.com logged in from Swing
 Affichage des infos de la banque
+Admin : admin@test.com logged in from Swing
+Affichage des infos de la banque
+Admin : admin@test.com logged in from Swing
+Affichage des infos des clients
+Admin : admin@test.com logged in from Swing
+Affichage des infos des clients
+Admin : admin@test.com logged in from Swing
+Affichage des infos de la banque
+Affichage des infos des clients
+Admin : admin@test.com logged in from Swing
+Affichage des infos des comptes
+Admin : admin@test.com logged in from Swing
+Affichage des infos des clients
+Admin : admin@test.com logged in from Swing
+Admin : admin@test.com logged in from Swing
+Affichage des infos des clients
+Affichage des infos de la banque
+Affichage des infos des clients
+Admin : admin@test.com logged in from Swing
+Admin : admin@test.com logged in from Swing
+_______________________________________________________Fin Session
+Admin : admin@test.com logged in from Swing
+Admin : admin@test.com logged in from Swing
+Admin : admin@test.com logged in from Swing
+Admin : admin@test.com logged in from Swing
+Admin : admin@test.com logged in from Swing
+Admin : admin@test.com logged in from Swing

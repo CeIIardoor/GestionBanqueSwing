@@ -5,21 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef869a2e-b100-43cb-8dfe-fcf2c7a1621a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/View/Swing/Frames/Auth/LoginFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/Swing/Panels/Admin/AdminPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/Swing/Frames/Admin/CRUDFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/Swing/Panels/Admin/CRUDPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/DAO/FilesDAO/FilesHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/DAO/FilesDAO/FilesHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/DAO/LogsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/DAO/LogsDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/DB/clients.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/DB/clients.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/DB/logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/DB/logs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/Service/ServiceTransactionnel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/Service/ServiceTransactionnel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ConsoleApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConsoleApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DAO/FilesDAO/FilesHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/FilesDAO/FilesHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAO/LogsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/LogsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DB/clients.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/clients.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DB/logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/logs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/ServiceTransactionnel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/ServiceTransactionnel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Console/MenuClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Console/MenuClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Swing/Frames/AdminFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Frames/Admin/AdminFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Swing/Frames/LoginFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Swing/Panels/Auth/LoginPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Panels/Auth/LoginPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Swing/SwingFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/SwingFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Swing/Frames/Admin/AdminFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Frames/Admin/AdminFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Swing/Panels/Admin/AdminPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Panels/Admin/AdminPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +167,7 @@
       <workItem from="1676460141129" duration="177000" />
       <workItem from="1676460407947" duration="28935000" />
       <workItem from="1676511934810" duration="945000" />
-      <workItem from="1676547394710" duration="10128000" />
+      <workItem from="1676547394710" duration="14343000" />
     </task>
     <task id="LOCAL-00001" summary="progress projet java (Dep Inj)">
       <created>1667492908381</created>
@@ -422,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676554366620</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Admin Frame">
+      <created>1676557954667</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1676557954667</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,7 +470,8 @@
     <MESSAGE value="Added Login Page" />
     <MESSAGE value="Add README.md" />
     <MESSAGE value="LoginFrame" />
-    <option name="LAST_COMMIT_MESSAGE" value="LoginFrame" />
+    <MESSAGE value="Admin Frame" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin Frame" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

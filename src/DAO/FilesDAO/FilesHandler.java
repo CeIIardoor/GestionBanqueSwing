@@ -1,5 +1,11 @@
 package DAO.FilesDAO;
 
+import DAO.ClientsDAO;
+import DAO.ComptesDAO;
+import Model.Banque;
+import Model.Client;
+import Model.Compte;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.StandardOpenOption;
@@ -95,6 +101,18 @@ public class FilesHandler implements FilesBasePaths {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void save(Banque banque) {
+        FilesHandler.flush();
+        FilesHandler.init();
+        for (Client client : banque.getClients()) {
+            ClientsDAO.writeClient(client);
+            for (Compte compte : client.getComptes()) {
+                ComptesDAO.writeCompte(compte, client.getId());
+            }
+        }
+
     }
 
     public static void drop() {

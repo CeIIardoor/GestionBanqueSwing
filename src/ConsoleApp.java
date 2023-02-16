@@ -1,12 +1,8 @@
 import Controller.AuthController;
-import DAO.ClientsDAO;
-import DAO.ComptesDAO;
 import DAO.FilesDAO.DataLoader;
 import DAO.FilesDAO.FilesHandler;
 import DAO.LogsDAO;
 import Model.Banque;
-import Model.Client;
-import Model.Compte;
 import Model.User;
 import View.Console.MenuAdmin;
 import View.Console.MenuAuth;
@@ -72,14 +68,7 @@ public class ConsoleApp {
                 System.out.println("Logs vidés");
 
             } else if (choix == 9) {
-                FilesHandler.flush();
-                FilesHandler.init();
-                for (Client client : banque.getClients()) {
-                    ClientsDAO.writeClient(client);
-                    for (Compte compte : client.getComptes()) {
-                        ComptesDAO.writeCompte(compte, client.getId());
-                    }
-                }
+                FilesHandler.save(banque);
                 LogsDAO.write("_______________________________________________________Fin Session");
                 System.out.println("Au revoir");
             } else {

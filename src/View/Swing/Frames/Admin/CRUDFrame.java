@@ -2,14 +2,14 @@ package View.Swing.Frames.Admin;
 
 import DAO.FilesDAO.FilesHandler;
 import Model.Banque;
-import View.Swing.Panels.Admin.AdminPanel;
+import View.Swing.Panels.Admin.CRUDPanel;
 
 import javax.swing.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-public class AdminFrame extends JFrame {
-    public AdminFrame(Banque banque) {
+public class CRUDFrame extends JFrame {
+    public CRUDFrame(Banque banque) {
         addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
@@ -17,10 +17,10 @@ public class AdminFrame extends JFrame {
                 System.exit(0);
             }
         });
-        setSize(600, 400);
+        setSize(800, 600);
         setLocationRelativeTo(null);
-        AdminPanel adminPanel = new AdminPanel(banque);
-        add(adminPanel);
+        CRUDPanel crudPanel = new CRUDPanel(banque);
+        add(crudPanel);
         setVisible(true);
     }
 }
