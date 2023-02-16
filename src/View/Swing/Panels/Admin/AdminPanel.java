@@ -37,10 +37,11 @@ public class AdminPanel extends JPanel {
         buttonPanel.add(btnInfoBanque);
         JButton btnInfoClients = new JButton("Afficher Infos Clients");
         StringBuilder infoClients = new StringBuilder();
+        infoClients.append("****************************************\n");
         for (Client client : banque.getClients()) {
-            infoClients.append("\n").append("Nom: ").append(client.getNom()).append("\n").append("Email: ")
-                    .append(client.getEmail()).append("\n").append("Solde Total : ").append(client.getSoldeTotal())
-                    .append("\n").append("Nombre de comptes: ").append(client.getComptes().size()).append("\n")
+            infoClients.append("\n").append("Nom: ").append(client.getNom()).append(" ").append("Email: ")
+                    .append(client.getEmail()).append(" ").append("Solde Total : ").append(client.getSoldeTotal())
+                    .append(" ").append("Nombre de comptes: ").append(client.getComptes().size()).append("\n")
                     .append("****************************************\n");
         }
         btnInfoClients.addActionListener(e -> {

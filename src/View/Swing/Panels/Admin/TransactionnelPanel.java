@@ -57,7 +57,7 @@ public class TransactionnelPanel extends JPanel {
                     JOptionPane.showMessageDialog(null, "Le montant doit être un nombre positif",
                             "Erreur", JOptionPane.ERROR_MESSAGE);
                 } else {
-                    int id = Integer.parseInt(account.getSelectedItem().toString().split(" ")[2]);
+                    int id = Integer.parseInt(account.getSelectedItem().toString().split(" ")[3]);
                     double amountValue = Double.parseDouble(amount.getText());
                     ServiceTransactionnel serviceTransactionnel = new ServiceTransactionnel(banque);
                     if (serviceTransactionnel.retirer(amountValue, banque.getCompteById(id))) {
@@ -66,7 +66,7 @@ public class TransactionnelPanel extends JPanel {
                         FilesHandler.save(banque);
                         LogsDAO.write("Retrait effectué sur le compte " + id + " pour un montant de " + amountValue);
                     } else {
-                        JOptionPane.showMessageDialog(null, "Retrait échoué",
+                        JOptionPane.showMessageDialog(null, "Solde insuffisant",
                                 "Erreur", JOptionPane.ERROR_MESSAGE);
                     }
                 }

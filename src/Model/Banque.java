@@ -79,7 +79,7 @@ public class Banque{
         if (this.clients.size() < this.maxClients) {
             this.clients.add(client);
             System.out.println("Client " + client.getId() + " ajouté avec succès");
-            LogsDAO.write("Ajout du client " + client.getId());
+//            LogsDAO.write("Ajout du client " + client.getId());
         } else {
             System.out.println("Impossible d'ajouter le client " + client.getId() + " : nombre max de clients atteint");
         }

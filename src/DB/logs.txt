@@ -1,51 +1,5 @@
 Admin : admin@test.com logged in from Swing
-_______________________________________________________Fin Session
 Admin : admin@test.com logged in from Swing
-_______________________________________________________Fin SessionAjout du client 1
-Ajout du client 2
-Ajout du client 3
-Ajout du client 4
-Ajout du client 5
-Ajout du client 6
 Admin : admin@test.com logged in from Swing
-_______________________________________________________Fin Session
-Ajout du client 1
-Ajout du client 2
-Ajout du client 3
-Ajout du client 4
-Ajout du client 5
-Ajout du client 6
 Admin : admin@test.com logged in from Swing
-Ajout du client 1
-Ajout du client 2
-Ajout du client 3
-Ajout du client 4
-Ajout du client 5
-Ajout du client 6
 Admin : admin@test.com logged in from Swing
-Ajout du client 1
-Ajout du client 2
-Ajout du client 3
-Ajout du client 4
-Ajout du client 5
-Ajout du client 6
-Admin : admin@test.com logged in from Swing
-Le montant de 500.0 a été versé sur le compte 1
-Depot de 500.0MAD sur le compte 1
-Ajout du client 1
-Ajout du client 2
-Ajout du client 3
-Ajout du client 4
-Ajout du client 5
-Ajout du client 6
-Admin : admin@test.com logged in from Swing
-Ajout du client 1
-Ajout du client 2
-Ajout du client 3
-Ajout du client 4
-Ajout du client 5
-Ajout du client 6
-Admin : admin@test.com logged in from Swing
-Le montant de 222.0 a été versé sur le compte 2
-Depot de 222.0MAD sur le compte 2
-Le montant de 500.0 a été viré du compte 1 vers le compte 3
