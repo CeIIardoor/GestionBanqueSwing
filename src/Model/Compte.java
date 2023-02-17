@@ -3,7 +3,6 @@ package Model;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.Scanner;
 
 public class Compte {
     public static int cmpCompte = 1;
@@ -11,7 +10,7 @@ public class Compte {
     private double solde;
     private String dateCreation;
     private final ArrayList<String> journalisation;
-    private Client proprietaire;
+    private final Client proprietaire;
 
     public int getId() {
         return idCompte;
@@ -25,52 +24,12 @@ public class Compte {
         this.solde = solde;
     }
 
-    public Compte(){
-        idCompte = cmpCompte++;
-        do{
-            System.out.println("Entrer le solde initial du compte " + idCompte + " : ");
-            solde = new Scanner(System.in).nextDouble();
-            System.out.println(solde);
-            if(solde < 0){
-                System.out.println("Le solde doit être un nombre positif, veuillez réessayer : ");
-            }
-        }while(solde < 0);
-        dateCreation = new SimpleDateFormat("yyyy/MM/dd").format(new Date());
-        journalisation = new ArrayList<String>();
-        journalisation.add("Création du compte le " + dateCreation);
-        if(solde != 0){
-            journalisation.add("Dépôt de " + solde + "dh");
-        }
-    }
-
     public ArrayList<String> getJournalisation() {
         return journalisation;
     }
 
     public Client getProprietaire() {
         return proprietaire;
-    }
-
-    public void setProprietaire(Client proprietaire) {
-        this.proprietaire = proprietaire;
-    }
-
-    public Compte(Client proprietaire){
-        idCompte = cmpCompte++;
-        do {
-            System.out.println("Entrer le solde initial du compte " + idCompte + " : ");
-            solde = new Scanner(System.in).nextDouble();
-            if (solde < 0) {
-                System.out.println("Le solde doit être positif, veuillez réessayer : ");
-            }
-        } while (solde < 0);
-        dateCreation = new SimpleDateFormat("yyyy/MM/dd").format(new Date());
-        journalisation = new ArrayList<String>();
-        journalisation.add("Création du compte le " + dateCreation);
-        if(solde != 0){
-            journalisation.add("Dépôt de " + solde + "dh");
-        }
-        this.proprietaire.getComptes().add(this);
     }
 
     public Compte(Client proprietaire, double solde){

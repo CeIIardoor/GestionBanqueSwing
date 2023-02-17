@@ -13,7 +13,7 @@ public class ServiceTri implements IServiceTri {
         banque = _banque;
     }
 
-    public ArrayList<Client> trierAsc(String trierPar) {
+    public void trierAsc(String trierPar) {
         ArrayList<Client> tableauATrier = new ArrayList<>(banque.getClients());
         for (int i = 0; i < tableauATrier.size(); i++) {
             for (int j = 0; j < tableauATrier.size(); j++) {
@@ -42,10 +42,9 @@ public class ServiceTri implements IServiceTri {
                 }
             }
         }
-        return tableauATrier;
     }
 
-    public ArrayList<Client> trierDesc(String trierPar) {
+    public void trierDesc(String trierPar) {
         ArrayList<Client> tableauATrier = new ArrayList<>(banque.getClients());
         for (int i = 0; i < tableauATrier.size(); i++) {
             for (int j = 0; j < tableauATrier.size(); j++) {
@@ -74,6 +73,5 @@ public class ServiceTri implements IServiceTri {
                 }
             }
         }
-        return tableauATrier;
     }
 }

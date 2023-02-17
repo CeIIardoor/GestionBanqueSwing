@@ -102,9 +102,7 @@ public class LoginPanel extends JPanel {
             int dialogResult = JOptionPane.showConfirmDialog(null, "Cette opération va fermer l'application, Continuer ?", "Warning", JOptionPane.YES_NO_OPTION);
             if (dialogResult == JOptionPane.YES_OPTION) {
                 FilesHandler.drop();
-                SwingUtilities.invokeLater(() -> {
-                    (SwingUtilities.getWindowAncestor(this)).dispose();
-                });
+                SwingUtilities.invokeLater(() -> (SwingUtilities.getWindowAncestor(this)).dispose());
             }
         });
         buttonPanel.add(btnResetDB);

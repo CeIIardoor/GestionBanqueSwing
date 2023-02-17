@@ -15,8 +15,6 @@ public class ConsoleApp {
     public static void main(String[] args) throws FileNotFoundException {
 //        System.out.println("____________SETUP____________");
         Banque banque = new Banque("Dire Straits Bank", "direstraits@banque.com", 100);
-//      FilesHandler.flush(); // Pour vider la base de données
-//      FilesHandler.drop(); // Pour supprimer la base de données
 
         if (!FilesHandler.BASE_FOLDER.toFile().exists()) { // Si le dossier DB n'existe pas
             FilesHandler.init();

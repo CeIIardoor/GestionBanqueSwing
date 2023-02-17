@@ -1,21 +1,21 @@
 package Model;
 
 //singleton
-public class Admin extends User{
+public class Admin extends User {
     private static Admin admin;
     private String login;
     private String password;
     private String role;
 
-    private Admin(String login, String password, String role) {
-        this.login = login;
-        this.password = password;
-        this.role = role;
+    private Admin() {
+        this.login = "admin@test.com";
+        this.password = "123456";
+        this.role = "admin";
     }
 
     public static Admin getInstance() {
         if (admin == null) {
-            admin = new Admin("admin@test.com", "123456", "admin");
+            admin = new Admin();
         }
         return admin;
     }

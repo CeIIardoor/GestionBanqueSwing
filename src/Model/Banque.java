@@ -4,13 +4,12 @@ import DAO.LogsDAO;
 
 import java.util.ArrayList;
 import java.util.Objects;
-import java.util.Scanner;
-public class Banque{
+public class Banque {
     private static int cmpBanques = 1;
     private final int idBanque;
     private final String nomAgence;
-    private String email;
-    private int maxClients;
+    private final String email;
+    private final int maxClients;
     private final ArrayList<Client> clients;
 
     public String getNomAgence() {
@@ -33,21 +32,6 @@ public class Banque{
         return clients;
     }
 
-    public Banque(){
-        this.idBanque = cmpBanques++;
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Entrer le nom de l'agence");
-        this.nomAgence = sc.nextLine();
-        do {
-            System.out.println("Entrer l'email de l'agence");
-            this.email = sc.nextLine();
-        } while (!this.email.matches("^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\\.[a-z]{2,4}$"));
-        do {
-            System.out.println("Entrer le nombre max de clients (>=10) :");
-            this.maxClients = sc.nextInt();
-        } while (this.maxClients < 10);
-        this.clients = new ArrayList<>(maxClients);
-    }
     public Banque(String nomAgence, String email, int maxClients) {
         idBanque = cmpBanques++;
         this.nomAgence = nomAgence;

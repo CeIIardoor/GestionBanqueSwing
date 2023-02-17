@@ -19,7 +19,6 @@ public class MenuClient implements IMenuClient {
         this.user = currentUser;
     }
 
-    @Override
     public void afficherMenuPrincipale() {
         int choix;
         do {

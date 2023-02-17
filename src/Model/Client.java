@@ -117,13 +117,9 @@ public class Client extends User {
         super.setPassword(password);
         this.dateAjout = new SimpleDateFormat("yyyy/MM/dd").format(new Date());
         this.journalisation = new ArrayList<>();
-        this.comptes = new ArrayList<>(getMaxComptes());
+        this.comptes = new ArrayList<>();
         this.journalisation.add("Création du client le " + new Date());
         this.comptes = new ArrayList<>();
-    }
-
-    public int getMaxComptes() {
-        return 3;
     }
 
     public String getDateAjout() {
@@ -136,10 +132,6 @@ public class Client extends User {
              sum += compte.getSolde();
         }
         return sum;
-    }
-
-    public ArrayList<String> getJournalisation() {
-        return journalisation;
     }
 
     public Compte getCompteByID(int numCompte) {

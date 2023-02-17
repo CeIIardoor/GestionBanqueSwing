@@ -7,7 +7,7 @@ import Model.Banque;
 import java.io.FileNotFoundException;
 
 public class DataLoader {
-    Banque banque;
+    final Banque banque;
 
     public DataLoader(Banque banque) {
         this.banque = banque;

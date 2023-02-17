@@ -10,7 +10,6 @@ public class ServiceUtilitaire implements IServiceUtilitaire {
     public ServiceUtilitaire(Banque _banque){
             banque = _banque;
     }
-    @Override
     public void consulterInformationsBanque() {
         System.out.println("Informations de la banque :");
         System.out.println("Nom : " + ServiceUtilitaire.banque.getNomAgence());

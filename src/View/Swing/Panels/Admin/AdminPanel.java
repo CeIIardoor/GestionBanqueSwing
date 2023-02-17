@@ -31,10 +31,7 @@ public class AdminPanel extends JPanel {
                 .append("Nom: ").append(banque.getNomAgence()).append("\n").append("Email: ")
                 .append(banque.getEmailAgence()).append("\n")
                 .append("****************************************\n");
-        btnInfoBanque.addActionListener(e -> {
-//            LogsDAO.write("Affichage des infos de la banque");
-            JOptionPane.showMessageDialog(null, infoBanque, "Infos Banque", JOptionPane.INFORMATION_MESSAGE);
-        });
+        btnInfoBanque.addActionListener(e -> JOptionPane.showMessageDialog(null, infoBanque, "Infos Banque", JOptionPane.INFORMATION_MESSAGE));
         buttonPanel.add(btnInfoBanque);
         JButton btnInfoClients = new JButton("Afficher Infos Clients");
         btnInfoClients.setFocusPainted(false);
@@ -55,7 +52,6 @@ public class AdminPanel extends JPanel {
         JButton btnServiceCrud = new JButton("Service CRUD Clients");
         btnServiceCrud.setFocusPainted(false);
         btnServiceCrud.addActionListener(e -> {
-//            LogsDAO.write("Ouverture de la fenêtre CRUD");
             new CRUDFrame(banque);
             (SwingUtilities.getWindowAncestor(this)).dispose();
         });

@@ -147,6 +147,7 @@ public class FilesHandler implements FilesBasePaths {
         seedClients();
     }
 
+    @SuppressWarnings("resource")
     public static void readLogs() {
         if (LOGS_PATH.exists()) {
             try {

@@ -11,12 +11,6 @@ public class User {
         this.setRole("client");
     }
 
-    public User(String login, String password, String role) {
-        this.setLogin(login);
-        this.setPassword(password);
-        this.setRole(role);
-    }
-
     public String getLogin() {
         return login;
     }
