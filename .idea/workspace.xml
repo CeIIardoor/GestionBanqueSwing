@@ -13,10 +13,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef869a2e-b100-43cb-8dfe-fcf2c7a1621a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Screenshots/Admin Transactionnel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshots/CRUD Admin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshots/Dashboard Admin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshots/LoginScreen.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jar/DB/comptes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Jar/DB/comptes.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jar/DB/logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Jar/DB/logs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jar/GestionBanque.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Jar/GestionBanque.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jar/GestionBanque.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Jar/GestionBanque.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Swing/Panels/Auth/LoginPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Panels/Auth/LoginPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/Frames/Client/ClientFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/Frames/Client/ClientFrame.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,14 +178,7 @@
       <workItem from="1676602589660" duration="118000" />
       <workItem from="1676603418359" duration="653000" />
       <workItem from="1676635656163" duration="1490000" />
-      <workItem from="1676637892980" duration="3638000" />
-    </task>
-    <task id="LOCAL-00003" summary="l3cha t7reg">
-      <created>1667503122768</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1667503122768</updated>
+      <workItem from="1676637892980" duration="4721000" />
     </task>
     <task id="LOCAL-00004" summary="l3cha t7reg">
       <created>1667503238318</created>
@@ -516,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676641482935</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Swing app 1.0">
+      <created>1676644032324</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1676644032324</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

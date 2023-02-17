@@ -1,25 +1,7 @@
 _______________________________________________________Nouvelle Session
-Le montant de 100.0 a été viré du compte 1 vers le compte 2
-Virement de 100.0MAD du compte 1 au compte 2
-Le montant de 500.0 a été viré du compte 1 vers le compte 4
-Virement de 500.0MAD du compte 1 au compte 4
 _______________________________________________________Nouvelle Session
-_______________________________________________________Nouvelle Session
-_______________________________________________________Nouvelle Session
-_______________________________________________________Nouvelle Session
-_______________________________________________________Nouvelle Session
-_______________________________________________________Nouvelle Session
-_______________________________________________________Nouvelle Session
-_______________________________________________________Nouvelle Session
-_______________________________________________________Nouvelle Session
-_______________________________________________________Nouvelle Session
+Ouverture de la fenêtre de consultation des opérations du client Yassine Laouina
 _______________________________________________________Nouvelle Session
 Admin : admin@test.com logged in from Swing
-_______________________________________________________Fin Session
-_______________________________________________________Nouvelle Session
-Admin : admin@test.com logged in from Swing
-Affichage des infos du client
-_______________________________________________________Fin Session
-_______________________________________________________Fin Session
-Admin : admin@test.com logged in from Swing
+Le montant de 123.0 a été viré du compte 1 vers le compte 3
 _______________________________________________________Fin Session
