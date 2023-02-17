@@ -19,7 +19,7 @@ public class ClientFrame extends JFrame {
                 System.exit(0);
             }
         });
-        this.setSize(800, 600);
+        this.setSize(600, 400);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
         ClientPanel clientPanel = new ClientPanel(banque, client);
