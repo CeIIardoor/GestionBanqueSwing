@@ -1,4 +1,15 @@
 _______________________________________________________Nouvelle Session
-Le montant de 100.0 a été versé sur le compte 1
-Dépôt de 100.0MAD au compte 1
-Ouverture de la fenêtre de consultation des opérations du client Yassine Laouina
+Le montant de 100.0 a été viré du compte 1 vers le compte 2
+Virement de 100.0MAD du compte 1 au compte 2
+Le montant de 500.0 a été viré du compte 1 vers le compte 4
+Virement de 500.0MAD du compte 1 au compte 4
+_______________________________________________________Nouvelle Session
+_______________________________________________________Nouvelle Session
+_______________________________________________________Nouvelle Session
+_______________________________________________________Nouvelle Session
+_______________________________________________________Nouvelle Session
+_______________________________________________________Nouvelle Session
+_______________________________________________________Nouvelle Session
+_______________________________________________________Nouvelle Session
+_______________________________________________________Nouvelle Session
+_______________________________________________________Nouvelle Session
