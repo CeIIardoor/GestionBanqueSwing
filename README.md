@@ -18,7 +18,7 @@ Client : test@test.com / 123456
 
 ## Installation
 
-- Plug and play
+- Plug and play (Jar/GestionBanque.jar)
 
 ```bash
 java -jar path/to/GestionBanque/GestionBanque.jar
