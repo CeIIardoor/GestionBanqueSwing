@@ -57,10 +57,9 @@ public class TransactionnelPanel extends JPanel {
                     JOptionPane.showMessageDialog(null, "Le montant doit être un nombre positif",
                             "Erreur", JOptionPane.ERROR_MESSAGE);
                 } else {
-                    int id = Integer.parseInt(account.getSelectedItem().toString().split(" ")[3]);
+                    int id = Integer.parseInt(Objects.requireNonNull(account.getSelectedItem()).toString().split(" ")[3]);
                     double amountValue = Double.parseDouble(amount.getText());
-                    ServiceTransactionnel serviceTransactionnel = new ServiceTransactionnel(banque);
-                    if (serviceTransactionnel.retirer(amountValue, banque.getCompteById(id))) {
+                    if (ServiceTransactionnel.retirer(amountValue, banque.getCompteById(id))) {
                         JOptionPane.showMessageDialog(null, "Retrait effectué avec succès",
                                 "Succès", JOptionPane.INFORMATION_MESSAGE);
                         FilesHandler.save(banque);
@@ -101,8 +100,7 @@ public class TransactionnelPanel extends JPanel {
                 }
                 double amountValue = Double.parseDouble(amount.getText());
                 int id = Integer.parseInt(((String) Objects.requireNonNull(account.getSelectedItem())).split(" ")[3]);
-                ServiceTransactionnel serviceTransactionnel = new ServiceTransactionnel(banque);
-                serviceTransactionnel.deposer(amountValue, banque.getCompteById(id));
+                ServiceTransactionnel.deposer(amountValue, banque.getCompteById(id));
                 FilesHandler.save(banque);
                 LogsDAO.write("Depot de " + amountValue + "MAD sur le compte " + id);
                 JOptionPane.showMessageDialog(null, "Le depot de " +
@@ -150,13 +148,12 @@ public class TransactionnelPanel extends JPanel {
                     return;
                 }
                 double amountValue = Double.parseDouble(amount.getText());
-                ServiceTransactionnel st = new ServiceTransactionnel(banque);
                 if (from == null || to == null) {
                     JOptionPane.showMessageDialog(null, "Merci de ne pas injecter des valeurs nulles",
                             "Erreur", JOptionPane.ERROR_MESSAGE);
                     return;
                 }
-                st.effectuerVirement(amountValue,
+                ServiceTransactionnel.verser(amountValue,
                         banque.getCompteById(Integer.parseInt((Objects.requireNonNull(from)).split(" ")[3])),
                         banque.getCompteById(Integer.parseInt((Objects.requireNonNull(to)).split(" ")[3]))
                 );

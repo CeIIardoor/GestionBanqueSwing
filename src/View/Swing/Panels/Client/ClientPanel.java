@@ -67,8 +67,7 @@ public class ClientPanel extends JPanel {
             if (option == JOptionPane.OK_OPTION) {
                 int idCompte = Integer.parseInt(Objects.requireNonNull(comboBox.getSelectedItem()).toString().split(" ")[3]);
                 double montant = Double.parseDouble(textField.getText());
-                ServiceTransactionnel st = new ServiceTransactionnel(banque);
-                if (st.retirer(montant, client.getCompteByID(idCompte))) {
+                if (ServiceTransactionnel.retirer(montant, client.getCompteByID(idCompte))) {
 
                     JOptionPane.showMessageDialog(null, "Retrait effectué avec succès",
                             "Retrait d'argent", JOptionPane.INFORMATION_MESSAGE);
@@ -107,8 +106,7 @@ public class ClientPanel extends JPanel {
             if (option == JOptionPane.OK_OPTION) {
                 int idCompte = Integer.parseInt(Objects.requireNonNull(comboBox.getSelectedItem()).toString().split(" ")[3]);
                 double montant = Double.parseDouble(textField.getText());
-                ServiceTransactionnel st = new ServiceTransactionnel(banque);
-                if (st.deposer(montant, client.getCompteByID(idCompte))) {
+                if (ServiceTransactionnel.deposer(montant, client.getCompteByID(idCompte))) {
                     JOptionPane.showMessageDialog(null, "Dépôt effectué avec succès",
                             "Dépôt d'argent", JOptionPane.INFORMATION_MESSAGE);
                     LogsDAO.write("Dépôt de " + montant + "MAD au compte " + idCompte);
@@ -130,31 +128,45 @@ public class ClientPanel extends JPanel {
         btnVirementArgent.setFocusPainted(false);
         btnVirementArgent.addActionListener(e -> {
             //option pane with number input and account combo box
-            String[] accounts = new String[client.getComptes().size()];
+            String[] comptesClient = new String[client.getComptes().size()];
             for (int i = 0; i < client.getComptes().size(); i++) {
-                accounts[i] = "<>ID Compte : " + client.getComptes().get(i).getId() +
+                comptesClient[i] = "<>ID Compte : " + client.getComptes().get(i).getId() +
                         " Solde : " + client.getComptes().get(i).getSolde() + "MAD";
             }
-            JComboBox<String> comboBox = new JComboBox<>(accounts);
+            String[] comptesBanque = new String[banque.getComptes().size()];
+            for (int i = 0; i < banque.getComptes().size(); i++) {
+                comptesBanque[i] = "<>ID Compte : " + banque.getComptes().get(i).getId() +
+                        " Propriétaire : " + banque.getComptes().get(i).getProprietaire().getNom() +
+                        " " + banque.getComptes().get(i).getProprietaire().getPrenom();
+            }
+            JComboBox<String> comboBoxClient = new JComboBox<>(comptesClient);
+            JComboBox<String> comboBoxBanque = new JComboBox<>(comptesBanque);
             JTextField textField = new JTextField();
-            JTextField textField2 = new JTextField();
             Object[] message = {
-                    "Compte source :", comboBox,
-                    "Compte destination :", textField,
-                    "Montant :", textField2
+                    "Compte client :", comboBoxClient,
+                    "Compte banque :", comboBoxBanque,
+                    "Montant :", textField
             };
             int option = JOptionPane.showConfirmDialog(null, message,
                     "Virement d'argent", JOptionPane.OK_CANCEL_OPTION);
             if (option == JOptionPane.OK_OPTION) {
-                int idCompteSource = Integer.parseInt(Objects.requireNonNull(comboBox.getSelectedItem()).toString().split(" ")[3]);
-                int idCompteDestination = Integer.parseInt(textField.getText());
-                double montant = Double.parseDouble(textField2.getText());
-                ServiceTransactionnel st = new ServiceTransactionnel(banque);
-                if (st.effectuerVirement(montant, client.getCompteByID(idCompteSource), client.getCompteByID(idCompteDestination))) {
+                int idCompteClient = Integer.parseInt(Objects.requireNonNull(comboBoxClient.getSelectedItem()).toString().split(" ")[3]);
+                int idCompteBanque = Integer.parseInt(Objects.requireNonNull(comboBoxBanque.getSelectedItem()).toString().split(" ")[3]);
+                double montant = Double.parseDouble(textField.getText());
+                if (montant > client.getCompteByID(idCompteClient).getSolde()) {
+                    JOptionPane.showMessageDialog(null, "Solde insuffisant",
+                            "Virement d'argent", JOptionPane.ERROR_MESSAGE);
+                    return;
+                }
+                if (idCompteClient == idCompteBanque) {
+                    JOptionPane.showMessageDialog(null, "Virement impossible",
+                            "Virement d'argent", JOptionPane.ERROR_MESSAGE);
+                    return;
+                }
+                if (ServiceTransactionnel.verser(montant, client.getCompteByID(idCompteClient), banque.getCompteById(idCompteBanque))) {
                     JOptionPane.showMessageDialog(null, "Virement effectué avec succès",
                             "Virement d'argent", JOptionPane.INFORMATION_MESSAGE);
-                    LogsDAO.write("Virement de " + montant + "MAD du compte " + idCompteSource
-                            + " au compte " + idCompteDestination);
+                    LogsDAO.write("Virement de " + montant + "MAD du compte " + idCompteClient + " au compte " + idCompteBanque);
                     FilesHandler.save(banque);
                     ClientPanel.this.removeAll();
                     ClientPanel.this.add(new ClientPanel(banque, client));
@@ -163,8 +175,7 @@ public class ClientPanel extends JPanel {
                 } else {
                     JOptionPane.showMessageDialog(null, "Virement échoué",
                             "Virement d'argent", JOptionPane.ERROR_MESSAGE);
-                    LogsDAO.write("Virement de " + montant + "MAD du compte " + idCompteSource
-                            + " au compte " + idCompteDestination + " a échoué");
+                    LogsDAO.write("Virement de " + montant + "MAD du compte " + idCompteClient + " au compte " + idCompteBanque + " a échoué");
                 }
             }
         });

@@ -23,11 +23,11 @@ public class CRUDPanel extends JPanel {
         titleLabel.setBorder(BorderFactory.createEmptyBorder(10, 10, 30, 10));
         add(titleLabel, BorderLayout.NORTH);
 
-        DefaultTableModel model = new DefaultTableModel(new Object[]{"ID", "Nom", "Prénom", "Email", "Date Ajout"}, 0);
+        DefaultTableModel model = new DefaultTableModel(new Object[]{"ID", "Nom", "Prénom", "Email", "Date Ajout", "Solde total"}, 0);
 
         for (Client client : banque.getClients()) {
             model.addRow(new Object[]{client.getId(), client.getNom(), client.getPrenom(), client.getEmail(),
-                    client.getDateAjout()
+                    client.getDateAjout(), client.getSoldeTotal()
             });
         }
 

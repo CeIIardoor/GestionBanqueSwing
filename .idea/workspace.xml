@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="GestionBanque:jar" />
@@ -9,16 +12,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef869a2e-b100-43cb-8dfe-fcf2c7a1621a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/GestionBanque_jar.xml" afterDir="false" />
+    <list default="true" id="ef869a2e-b100-43cb-8dfe-fcf2c7a1621a" name="Changes" comment="Swing app 1.0">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DB/logs.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jar/GestionBanque.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jar/icon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/launch4j.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAO/FilesDAO/FilesBasePaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/FilesDAO/FilesBasePaths.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DB/comptes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/comptes.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DB/logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/logs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/Jar/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jar/DB/comptes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Jar/DB/comptes.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jar/DB/logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Jar/DB/logs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DB/clients.csv" beforeDir="false" afterPath="$PROJECT_DIR$/DB/clients.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DB/comptes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/DB/comptes.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DB/logs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Service/Interfaces/IServiceTransactionnel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Service/ServiceTransactionnel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/ServiceTransactionnel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Console/MenuAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Console/MenuAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Console/MenuClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Console/MenuClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Swing/Panels/Admin/CRUDPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Panels/Admin/CRUDPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Swing/Panels/Admin/TransactionnelPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Panels/Admin/TransactionnelPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Swing/Panels/Client/ClientPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Panels/Client/ClientPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +87,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -171,7 +181,8 @@
       <workItem from="1676547394710" duration="47097000" />
       <workItem from="1676602589660" duration="118000" />
       <workItem from="1676603418359" duration="653000" />
-      <workItem from="1676635656163" duration="290000" />
+      <workItem from="1676635656163" duration="1490000" />
+      <workItem from="1676637892980" duration="1673000" />
     </task>
     <task id="LOCAL-00001" summary="progress projet java (Dep Inj)">
       <created>1667492908381</created>
@@ -495,7 +506,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676602683320</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Fix for jar build">
+      <created>1676636123552</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1676636123552</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Fix for jar build">
+      <created>1676636182917</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1676636182917</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -518,7 +543,6 @@
     <ignored-roots>
       <path value="$USER_HOME$" />
     </ignored-roots>
-    <MESSAGE value="progress projet java (Dep Inj)" />
     <MESSAGE value="l3cha t7reg" />
     <MESSAGE value="progress" />
     <MESSAGE value="a mimir" />
@@ -542,7 +566,9 @@
     <MESSAGE value="Service Transactionnel" />
     <MESSAGE value="Reset DB Button" />
     <MESSAGE value="Swing App 1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Swing App 1.0" />
+    <MESSAGE value="Fix for jar build" />
+    <MESSAGE value="Swing app 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Swing app 1.0" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

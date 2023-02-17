@@ -82,7 +82,6 @@ public class MenuAdmin implements IMenuAdmin {
                     break;
                 case 5:
                     MenuAdmin.afficherMenuTransactionnel();
-                    ServiceTransactionnel serviceTransactionnel = new ServiceTransactionnel(banque);
                     choix = new Scanner(System.in).nextInt();
                     switch (choix) {
                         case 1:
@@ -91,7 +90,7 @@ public class MenuAdmin implements IMenuAdmin {
                             Compte compteACrediter = ServiceCRUD.getCompteById(compteID);
                             System.out.println("Entrer le montant a crediter");
                             double montant = new Scanner(System.in).nextDouble();
-                            serviceTransactionnel.deposer(montant, compteACrediter);
+                            ServiceTransactionnel.deposer(montant, compteACrediter);
                             break;
                         case 2:
                             System.out.println("Entrer l'ID du compte a debiter");
@@ -99,7 +98,7 @@ public class MenuAdmin implements IMenuAdmin {
                             Compte compteADebiter = ServiceCRUD.getCompteById(compteID2);
                             System.out.println("Entrer le montant a debiter");
                             double montant2 = new Scanner(System.in).nextDouble();
-                            serviceTransactionnel.retirer(montant2, compteADebiter);
+                            ServiceTransactionnel.retirer(montant2, compteADebiter);
                             break;
                         case 3:
                             System.out.println("Entrer l'ID du compte a debiter");
@@ -110,7 +109,7 @@ public class MenuAdmin implements IMenuAdmin {
                             Compte compteACrediter2 = ServiceCRUD.getCompteById(compteID4);
                             System.out.println("Entrer le montant a transferer");
                             double montant3 = new Scanner(System.in).nextDouble();
-                            serviceTransactionnel.effectuerVirement(montant3, compteADebiter2, compteACrediter2);
+                            ServiceTransactionnel.verser(montant3, compteADebiter2, compteACrediter2);
                             break;
                         case 0:
                             break;

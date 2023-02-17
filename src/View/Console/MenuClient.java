@@ -80,18 +80,17 @@ public class MenuClient implements IMenuClient {
             System.out.println("0. Retour");
             System.out.println("__________________________________________________________");
             choix = new Scanner(System.in).nextInt();
-            ServiceTransactionnel serviceTransactionnel = new ServiceTransactionnel(banque);
             switch (choix) {
                 case 1:
                     System.out.println("Entrer le montant à déposer");
                     double montant = new Scanner(System.in).nextDouble();
-                    serviceTransactionnel.deposer(montant, compte);
+                    ServiceTransactionnel.deposer(montant, compte);
                     LogsDAO.write("Dépôt de " + montant + " sur le compte " + compte.getId());
                     break;
                 case 2:
                     System.out.println("Entrer le montant à retirer");
                     montant = new Scanner(System.in).nextDouble();
-                    serviceTransactionnel.retirer(montant, compte);
+                    ServiceTransactionnel.retirer(montant, compte);
                     LogsDAO.write("Retrait de " + montant + " sur le compte " + compte.getId());
                     break;
                 case 3:
@@ -104,7 +103,7 @@ public class MenuClient implements IMenuClient {
                     if (compteCredite != null) {
                         System.out.println("Entrer le montant à virer");
                         montant = new Scanner(System.in).nextDouble();
-                        serviceTransactionnel.effectuerVirement(montant, compte, compteCredite);
+                        ServiceTransactionnel.verser(montant, compte, compteCredite);
                         LogsDAO.write("Virement de " + montant + " sur le compte " + compte.getId());
                     } else {
                         System.out.println("Compte introuvable");

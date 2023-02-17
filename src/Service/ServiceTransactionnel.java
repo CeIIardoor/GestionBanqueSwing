@@ -1,18 +1,10 @@
 package Service;
 
 import DAO.LogsDAO;
-import Model.Banque;
 import Model.Compte;
-import Service.Interfaces.IServiceTransactionnel;
 
-public class ServiceTransactionnel implements IServiceTransactionnel {
-    private static Banque banque;
-
-    public ServiceTransactionnel(Banque _banque){
-        banque = _banque;
-    }
-
-    public boolean deposer(double montant, Compte c) {
+public class ServiceTransactionnel {
+    public static boolean deposer(double montant, Compte c) {
         if (montant > 0) {
             c.setSolde(c.getSolde() + montant);
             c.getJournalisation().add("Versement de " + montant + "dh");
@@ -25,7 +17,7 @@ public class ServiceTransactionnel implements IServiceTransactionnel {
         }
     }
 
-    public boolean retirer(double montant, Compte c) {
+    public static boolean retirer(double montant, Compte c) {
         if (montant > 0) {
             if (c.getSolde() >= montant) {
                 c.setSolde(c.getSolde() - montant);
@@ -43,7 +35,7 @@ public class ServiceTransactionnel implements IServiceTransactionnel {
         }
     }
 
-    public boolean effectuerVirement(double montant, Compte src, Compte des) {
+    public static boolean verser(double montant, Compte src, Compte des) {
         if (montant > 0) {
             if (src.getSolde() >= montant) {
                 src.setSolde(src.getSolde() - montant);
