@@ -1,28 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="GestionBanque:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef869a2e-b100-43cb-8dfe-fcf2c7a1621a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/GestionBanque_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jar/GestionBanque.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/DAO/FilesDAO/FilesHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/DAO/FilesDAO/FilesHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/Service/ServiceCRUD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/Service/ServiceCRUD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAO/FilesDAO/FilesHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/FilesDAO/FilesHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DB/clients.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/clients.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DB/comptes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/comptes.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DB/logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/logs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/ServiceCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/ServiceCRUD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Swing/Frames/Admin/AdminFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Frames/Admin/AdminFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Swing/Frames/Admin/CRUDFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Frames/Admin/CRUDFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Swing/Frames/Admin/TransactionnelFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Frames/Admin/TransactionnelFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Swing/Frames/Auth/LoginFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Frames/Auth/LoginFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Swing/Frames/Client/ClientFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Frames/Client/ClientFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Swing/Panels/Admin/AdminPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Panels/Admin/AdminPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Swing/Panels/Admin/TransactionnelPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Panels/Admin/TransactionnelPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Swing/Panels/Auth/LoginPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Panels/Auth/LoginPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Swing/Panels/Client/ClientPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Panels/Client/ClientPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Swing/SwingFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/SwingFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,16 +64,17 @@
     "TODO_SCOPE": "All Places",
     "WebServerToolWindowFactoryState": "false",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "last_opened_file_path": "C:/Users/lenovo/Desktop/Repos/GestionBanque",
+    "jdk.selected.JAVA_MODULE": "graalvm-11",
+    "last_opened_file_path": "C:/Users/lenovo/Desktop/Repos/GestionBanque/Jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propCompiler",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -171,7 +164,7 @@
       <workItem from="1676460141129" duration="177000" />
       <workItem from="1676460407947" duration="28935000" />
       <workItem from="1676511934810" duration="945000" />
-      <workItem from="1676547394710" duration="42987000" />
+      <workItem from="1676547394710" duration="43989000" />
     </task>
     <task id="LOCAL-00001" summary="progress projet java (Dep Inj)">
       <created>1667492908381</created>
@@ -474,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676590574034</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Swing App 1.0">
+      <created>1676597223922</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1676597223922</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -520,7 +520,8 @@
     <MESSAGE value="CRUD Frame" />
     <MESSAGE value="Service Transactionnel" />
     <MESSAGE value="Reset DB Button" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reset DB Button" />
+    <MESSAGE value="Swing App 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Swing App 1.0" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

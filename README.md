@@ -19,12 +19,13 @@ Admin : admin@test.com / 123456
 Client : test@test.com / 123456
 
 ## Installation
-
 - Plug and play
-
+```bash
+java -jar path/to/GestionBanque/GestionBanque.jar
+```
 ### Prérequis
 
-- Intellij IDEA or any build tool
+- Java 11 ou plus
 
 ## Auteurs
 
