@@ -4,13 +4,7 @@
 
 ## Description
 
-Ce projet a pour but de mettre en place un système de gestion de banque.
-Choisir au Main l'application souhaitée [Console - Swing]:
-
-```java
-//        ConsoleApp.main(args);
-//        SwingApp.main(args);
-```
+Projet de gestion de banque en Java. Console et Swing.
 
 ## Sessions
 
@@ -18,14 +12,21 @@ Admin : admin@test.com / 123456
 <br>
 Client : test@test.com / 123456
 
+## Screenshots
+
+// TODO
+
 ## Installation
+
 - Plug and play
+
 ```bash
 java -jar path/to/GestionBanque/GestionBanque.jar
 ```
+
 ### Prérequis
 
-- Java 11 ou plus
+- Java 11 (Langage Level 9+) (https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 
 ## Auteurs
 

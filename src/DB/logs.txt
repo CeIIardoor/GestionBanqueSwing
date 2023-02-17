@@ -9,3 +9,4 @@ Suppression du client 6
 Affichage des infos du client
 _______________________________________________________Fin Session
 Ouverture de la fenêtre de consultation des opérations du client Yassine Laouina
+_______________________________________________________Nouvelle Session
