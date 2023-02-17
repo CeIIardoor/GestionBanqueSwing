@@ -12,52 +12,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef869a2e-b100-43cb-8dfe-fcf2c7a1621a" name="Changes" comment="Fix minor bug">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DB/logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DB/logs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jar/GestionBanque.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Jar/GestionBanque.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/ConsoleApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/ConsoleApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/Controller/Interfaces/IAuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/Controller/Interfaces/IAuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/DAO/FilesDAO/DataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/DAO/FilesDAO/DataLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/DAO/IDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/Model/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/Model/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/Model/Banque.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/Model/Banque.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/Model/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/Model/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/Model/Compte.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/Model/Compte.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/Model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/Model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/Service/Interfaces/IServiceBanque.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/Service/Interfaces/IServiceBanque.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/Service/Interfaces/IServiceTri.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/Service/Interfaces/IServiceTri.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/Service/Interfaces/IServiceUtilitaire.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/Service/Interfaces/IServiceUtilitaire.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/Service/ServiceUtilitaire.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/Service/ServiceUtilitaire.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/View/Console/Interfaces/IMenuAdmin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/View/Console/Interfaces/IMenuAdmin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/View/Console/Interfaces/IMenuAuth.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/View/Console/Interfaces/IMenuClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/View/Console/Interfaces/IMenuClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/View/Console/MenuClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/View/Console/MenuClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/SwingFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/SwingFacade.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConsoleApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConsoleApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Interfaces/IAuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Interfaces/IAuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAO/FilesDAO/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/FilesDAO/DataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAO/FilesDAO/FilesHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/FilesDAO/FilesHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAO/IDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Banque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Banque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Compte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Compte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/Interfaces/IServiceBanque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/Interfaces/IServiceBanque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/Interfaces/IServiceTri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/Interfaces/IServiceTri.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/Interfaces/IServiceUtilitaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/Interfaces/IServiceUtilitaire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/ServiceTri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/ServiceTri.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/ServiceUtilitaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/ServiceUtilitaire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Console/Interfaces/IMenuAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Console/Interfaces/IMenuAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Console/Interfaces/IMenuAuth.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Console/Interfaces/IMenuClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Console/Interfaces/IMenuClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Console/MenuClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Console/MenuClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Swing/Panels/Admin/AdminPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Panels/Admin/AdminPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Swing/Panels/Auth/LoginPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Panels/Auth/LoginPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Swing/SwingFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/SwingFacade.java" afterDir="false" />
+    <list default="true" id="ef869a2e-b100-43cb-8dfe-fcf2c7a1621a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Jar/DB/logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Jar/DB/logs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Swing/Panels/Client/ClientPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Panels/Client/ClientPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +44,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2GwoxTV12fR4uH0iiLrbO0siZjf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -213,14 +173,7 @@
       <workItem from="1676603418359" duration="653000" />
       <workItem from="1676635656163" duration="1490000" />
       <workItem from="1676637892980" duration="4779000" />
-      <workItem from="1676645359219" duration="2682000" />
-    </task>
-    <task id="LOCAL-00016" summary="nostalgia">
-      <created>1667573581084</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1667573581084</updated>
+      <workItem from="1676645359219" duration="3062000" />
     </task>
     <task id="LOCAL-00017" summary="nostalgia">
       <created>1667574043993</created>
@@ -558,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676646620861</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Code CleanUp">
+      <created>1676649032039</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1676649032039</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -581,7 +541,6 @@
     <ignored-roots>
       <path value="$USER_HOME$" />
     </ignored-roots>
-    <MESSAGE value="a mimir" />
     <MESSAGE value="oncf" />
     <MESSAGE value="nostalgia" />
     <MESSAGE value="js vibes : scanner.close closes system.in ?" />
@@ -606,7 +565,8 @@
     <MESSAGE value="Swing app 1.0" />
     <MESSAGE value="Added Screenshots" />
     <MESSAGE value="Fix minor bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix minor bug" />
+    <MESSAGE value="Code CleanUp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code CleanUp" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

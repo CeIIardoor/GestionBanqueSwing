@@ -5,3 +5,7 @@ _______________________________________________________Nouvelle Session
 Admin : admin@test.com logged in from Swing
 Le montant de 123.0 a été viré du compte 1 vers le compte 3
 _______________________________________________________Fin Session
+_______________________________________________________Nouvelle Session
+Ouverture de la fenêtre de consultation des opérations du client Yassine Laouina
+Virement de -300.0MAD du compte 1 au compte 3 a échoué
+_______________________________________________________Nouvelle Session

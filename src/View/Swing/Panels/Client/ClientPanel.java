@@ -153,6 +153,11 @@ public class ClientPanel extends JPanel {
                 int idCompteClient = Integer.parseInt(Objects.requireNonNull(comboBoxClient.getSelectedItem()).toString().split(" ")[3]);
                 int idCompteBanque = Integer.parseInt(Objects.requireNonNull(comboBoxBanque.getSelectedItem()).toString().split(" ")[3]);
                 double montant = Double.parseDouble(textField.getText());
+                if (montant <= 0) {
+                    JOptionPane.showMessageDialog(null, "Montant invalide",
+                            "Virement d'argent", JOptionPane.ERROR_MESSAGE);
+                    return;
+                }
                 if (montant > client.getCompteByID(idCompteClient).getSolde()) {
                     JOptionPane.showMessageDialog(null, "Solde insuffisant",
                             "Virement d'argent", JOptionPane.ERROR_MESSAGE);
