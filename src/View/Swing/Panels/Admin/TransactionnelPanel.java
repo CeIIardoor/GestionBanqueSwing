@@ -40,7 +40,7 @@ public class TransactionnelPanel extends JPanel {
             ArrayList<Compte> comptes = banque.getComptes();
             String[] accountStrings = new String[comptes.size()];
             for (int i = 0; i < comptes.size(); i++) {
-                accountStrings[i] = "ID Compte : " + comptes.get(i).getId() + " -  Propriétaire : "
+                accountStrings[i] = "<>ID Compte : " + comptes.get(i).getId() + " -  Propriétaire : "
                         + comptes.get(i).getProprietaire().getNom() + " " + comptes.get(i).getProprietaire().getPrenom();
             }
             JComboBox<String> account = new JComboBox<>(accountStrings);
@@ -81,7 +81,7 @@ public class TransactionnelPanel extends JPanel {
             ArrayList<Compte> comptes = banque.getComptes();
             String[] accountStrings = new String[comptes.size()];
             for (int i = 0; i < comptes.size(); i++) {
-                accountStrings[i] = "ID Compte : " + comptes.get(i).getId() + " -  Propriétaire : "
+                accountStrings[i] = "<>ID Compte : " + comptes.get(i).getId() + " -  Propriétaire : "
                         + comptes.get(i).getProprietaire().getNom() + " " + comptes.get(i).getProprietaire().getPrenom();
             }
             JComboBox<String> account = new JComboBox<>(accountStrings);
@@ -120,7 +120,7 @@ public class TransactionnelPanel extends JPanel {
             ArrayList<Compte> comptes = banque.getComptes();
             String[] accountStrings = new String[comptes.size()];
             for (int i = 0; i < comptes.size(); i++) {
-                accountStrings[i] = "ID Compte : " + comptes.get(i).getId() + " -  Propriétaire : "
+                accountStrings[i] = "<>ID Compte : " + comptes.get(i).getId() + " -  Propriétaire : "
                         + comptes.get(i).getProprietaire().getNom() + " " + comptes.get(i).getProprietaire().getPrenom();
             }
             JComboBox<String> fromAccount = new JComboBox<>(accountStrings);

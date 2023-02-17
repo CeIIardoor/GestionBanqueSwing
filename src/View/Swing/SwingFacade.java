@@ -2,6 +2,7 @@ package View.Swing;
 
 import DAO.FilesDAO.DataLoader;
 import DAO.FilesDAO.FilesHandler;
+import DAO.LogsDAO;
 import Model.Banque;
 import View.Swing.Frames.Auth.LoginFrame;
 
@@ -20,6 +21,8 @@ public class SwingFacade {
         DataLoader dataLoader = new DataLoader(banque);
         dataLoader.load("clients");
         dataLoader.load("comptes");
+
+        LogsDAO.write("_______________________________________________________Nouvelle Session");
 
         new LoginFrame(banque);
     }

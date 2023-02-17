@@ -66,7 +66,7 @@ public class FilesHandler implements FilesBasePaths {
 
     public static void seedComptes() {
         try {
-            Files.write(CLIENTS_PATH.toPath(), ("1;Client1;test;client@test.com;123456;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
+            Files.write(CLIENTS_PATH.toPath(), ("1;Yassine;Laouina;client@test.com;123456;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
             Files.write(CLIENTS_PATH.toPath(), ("2;John;Doe;johndoe@test.com;123456;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
             Files.write(CLIENTS_PATH.toPath(), ("3;Jane;Doe;janedoe@test.com;123456;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
             Files.write(CLIENTS_PATH.toPath(), ("4;Jack;Doe;jackdoe@test.com;123456;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);

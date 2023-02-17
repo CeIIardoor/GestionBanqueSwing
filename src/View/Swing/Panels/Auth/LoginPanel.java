@@ -4,8 +4,10 @@ import Controller.AuthController;
 import DAO.FilesDAO.FilesHandler;
 import DAO.LogsDAO;
 import Model.Banque;
+import Model.Client;
 import Model.User;
 import View.Swing.Frames.Admin.AdminFrame;
+import View.Swing.Frames.Client.ClientFrame;
 
 import javax.swing.*;
 import java.awt.*;
@@ -39,7 +41,7 @@ public class LoginPanel extends JPanel {
         c.weightx = 1.0;
         JLabel emailLabel = new JLabel("Email:");
         JTextField emailField = new JTextField(10);
-        emailField.setText("admin@test.com");
+        emailField.setText("adminOUclient@test.com");
         emailField.setPreferredSize(new Dimension(0, 25));
         inputPanel.add(emailLabel, c);
         c.gridx = 1;
@@ -79,7 +81,8 @@ public class LoginPanel extends JPanel {
                     new AdminFrame(banque);
                     (SwingUtilities.getWindowAncestor(this)).dispose();
                 } else if (currentUser.getRole().equals("client")) {
-                    System.out.println("Hello, Client!");
+                    new ClientFrame(banque, (Client) currentUser);
+                    (SwingUtilities.getWindowAncestor(this)).dispose();
                 }
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid email or password. Please try again.", "Login Failed", JOptionPane.ERROR_MESSAGE);

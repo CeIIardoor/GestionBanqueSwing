@@ -25,6 +25,7 @@ public class AdminPanel extends JPanel {
         // Create a panel for the buttons
         JPanel buttonPanel = new JPanel(new GridLayout(2, 2));
         JButton btnInfoBanque = new JButton("Afficher Infos Banque");
+        btnInfoBanque.setFocusPainted(false);
         StringBuilder infoBanque = new StringBuilder();
         infoBanque.append("****************************************\n")
                 .append("Nom: ").append(banque.getNomAgence()).append("\n").append("Email: ")
@@ -36,21 +37,23 @@ public class AdminPanel extends JPanel {
         });
         buttonPanel.add(btnInfoBanque);
         JButton btnInfoClients = new JButton("Afficher Infos Clients");
+        btnInfoClients.setFocusPainted(false);
         StringBuilder infoClients = new StringBuilder();
-        infoClients.append("****************************************\n");
+        infoClients.append("****************************************");
         for (Client client : banque.getClients()) {
-            infoClients.append("\n").append("Nom: ").append(client.getNom()).append(" ").append("Email: ")
-                    .append(client.getEmail()).append(" ").append("Solde Total : ").append(client.getSoldeTotal())
-                    .append(" ").append("Nombre de comptes: ").append(client.getComptes().size()).append("\n")
-                    .append("****************************************\n");
+            infoClients.append("\n").append("<> Nom: ").append(client.getNom()).append(" - ").append("Email: ")
+                    .append(client.getEmail()).append(" - ").append("Solde Total : ").append(client.getSoldeTotal())
+                    .append(" - ").append("Nombre de comptes: ").append(client.getComptes().size()).append("\n")
+                    .append("****************************************");
         }
         btnInfoClients.addActionListener(e -> {
-//            LogsDAO.write("Affichage des infos des clients");
+            LogsDAO.write("Affichage des infos du client");
             JOptionPane.showMessageDialog(null, infoClients, "Infos Clients", JOptionPane.INFORMATION_MESSAGE);
         });
         buttonPanel.add(btnInfoClients);
 
         JButton btnServiceCrud = new JButton("Service CRUD Clients");
+        btnServiceCrud.setFocusPainted(false);
         btnServiceCrud.addActionListener(e -> {
 //            LogsDAO.write("Ouverture de la fenêtre CRUD");
             new CRUDFrame(banque);
@@ -58,6 +61,7 @@ public class AdminPanel extends JPanel {
         });
         buttonPanel.add(btnServiceCrud);
         JButton btnServiceTransactionnel = new JButton("Service Transactionnel");
+        btnServiceTransactionnel.setFocusPainted(false);
         btnServiceTransactionnel.addActionListener(e -> {
 //            LogsDAO.write("Ouverture de la fenêtre Transactionnel");
             new TransactionnelFrame(banque);

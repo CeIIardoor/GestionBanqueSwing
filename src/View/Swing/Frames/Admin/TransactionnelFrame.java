@@ -10,6 +10,7 @@ import java.awt.event.WindowEvent;
 
 public class TransactionnelFrame extends JFrame {
     public TransactionnelFrame(Banque banque) {
+        super("Transactionnel");
         addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {

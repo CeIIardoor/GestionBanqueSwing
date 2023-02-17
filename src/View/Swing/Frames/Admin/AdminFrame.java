@@ -10,6 +10,7 @@ import java.awt.event.WindowEvent;
 
 public class AdminFrame extends JFrame {
     public AdminFrame(Banque banque) {
+        super("Admin");
         addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {

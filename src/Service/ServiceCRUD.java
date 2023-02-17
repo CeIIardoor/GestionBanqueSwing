@@ -68,21 +68,6 @@ public class ServiceCRUD {
         return null;
     }
 
-    public void lierCompteAuClient(int idClient, int idCompte){
-        Client client = getClientById(idClient);
-        Compte compte = getCompteById(idCompte);
-        if (client != null && compte != null){
-            if (client.getComptes().size() < client.getMaxComptes()){
-                client.ajouterCompte(compte);
-                System.out.println("Compte " + compte.getId() + " lié au client " + client.getId());
-            } else {
-                System.out.println("Impossible de lier le compte " + compte.getId() + " au client " + client.getId() + " : nombre max de comptes atteint");
-            }
-        } else {
-            System.out.println("Compte ou client inexistant");
-        }
-    }
-
     public Compte chercherUnCompte(int idCompte){
         Compte compte = getCompteById(idCompte);
         if (compte != null){

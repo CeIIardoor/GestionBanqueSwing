@@ -5,18 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef869a2e-b100-43cb-8dfe-fcf2c7a1621a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/View/Swing/Frames/Client/ClientFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/Swing/Panels/Client/ClientPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/DAO/FilesDAO/FilesHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/DAO/FilesDAO/FilesHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/DB/clients.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/DB/comptes.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/DB/logs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/Service/ServiceCRUD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/Service/ServiceCRUD.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DAO/FilesDAO/FilesHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/FilesDAO/FilesHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DB/clients.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/clients.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DB/comptes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/comptes.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DB/logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/logs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Service/ServiceCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/ServiceCRUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Swing/Frames/Admin/AdminFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Frames/Admin/AdminFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Swing/Frames/Admin/CRUDFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Frames/Admin/CRUDFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Swing/Frames/Admin/TransactionnelFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Frames/Admin/TransactionnelFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Swing/Frames/Auth/LoginFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Frames/Auth/LoginFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Swing/Frames/Client/ClientFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Frames/Client/ClientFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Swing/Panels/Admin/AdminPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Panels/Admin/AdminPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Swing/Panels/Admin/TransactionnelPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Panels/Admin/TransactionnelPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/Swing/Panels/Auth/LoginPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Panels/Auth/LoginPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Swing/Panels/Client/ClientPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Panels/Client/ClientPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Swing/SwingFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/SwingFacade.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +171,7 @@
       <workItem from="1676460141129" duration="177000" />
       <workItem from="1676460407947" duration="28935000" />
       <workItem from="1676511934810" duration="945000" />
-      <workItem from="1676547394710" duration="36512000" />
+      <workItem from="1676547394710" duration="42987000" />
     </task>
     <task id="LOCAL-00001" summary="progress projet java (Dep Inj)">
       <created>1667492908381</created>
@@ -461,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676587818652</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Reset DB Button">
+      <created>1676590574034</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1676590574034</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +519,8 @@
     <MESSAGE value="Admin Frame" />
     <MESSAGE value="CRUD Frame" />
     <MESSAGE value="Service Transactionnel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Service Transactionnel" />
+    <MESSAGE value="Reset DB Button" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reset DB Button" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

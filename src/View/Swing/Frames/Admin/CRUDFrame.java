@@ -10,6 +10,7 @@ import java.awt.event.WindowEvent;
 
 public class CRUDFrame extends JFrame {
     public CRUDFrame(Banque banque) {
+        super("CRUD");
         addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
