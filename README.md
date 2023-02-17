@@ -18,8 +18,8 @@ Client : test@test.com / 123456
 <br/>
 | | |
 |:-------------------------:|:-------------------------:|
-|<img width="2406" alt="Dire Straits Bank" src="https://github.com/CeIIardoor/GestionBanqueSwing/blob/master/Screenshots/Admin%20Transactionnel.png"> s |  <img width="2406" alt="Dire Straits Bank" src="https://github.com/CeIIardoor/GestionBanqueSwing/blob/master/Screenshots/CRUD%20Admin.png">
-|<img width="2406" alt="Dire Straits Bank" src="https://github.com/CeIIardoor/GestionBanqueSwing/blob/master/Screenshots/Dashboard%20Admin.png">  |  <img width="2406" alt="Dire Straits Bank" src="https://github.com/CeIIardoor/GestionBanqueSwing/blob/master/Screenshots/Index%20Client.png">
+|<img width="1604" alt="Dire Straits Bank" src="https://github.com/CeIIardoor/GestionBanqueSwing/blob/master/Screenshots/Admin%20Transactionnel.png"> s |  <img width="1604" alt="Dire Straits Bank" src="https://github.com/CeIIardoor/GestionBanqueSwing/blob/master/Screenshots/CRUD%20Admin.png">
+|<img width="1604" alt="Dire Straits Bank" src="https://github.com/CeIIardoor/GestionBanqueSwing/blob/master/Screenshots/Dashboard%20Admin.png">  |  <img width="1604" alt="Dire Straits Bank" src="https://github.com/CeIIardoor/GestionBanqueSwing/blob/master/Screenshots/Index%20Client.png">
 <br/>
 
 ## Installation
