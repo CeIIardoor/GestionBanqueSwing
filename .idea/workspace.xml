@@ -13,17 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef869a2e-b100-43cb-8dfe-fcf2c7a1621a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Screenshots/Admin Transactionnel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screenshots/CRUD Admin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screenshots/Dashboard Admin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screenshots/LoginScreen.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jar/DB/comptes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Jar/DB/comptes.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jar/DB/logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Jar/DB/logs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jar/GestionBanque.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Jar/GestionBanque.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jar/GestionBanque.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Jar/GestionBanque.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/Frames/Client/ClientFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/Frames/Client/ClientFrame.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,21 +169,8 @@
       <workItem from="1676602589660" duration="118000" />
       <workItem from="1676603418359" duration="653000" />
       <workItem from="1676635656163" duration="1490000" />
-      <workItem from="1676637892980" duration="4721000" />
-    </task>
-    <task id="LOCAL-00004" summary="l3cha t7reg">
-      <created>1667503238318</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1667503238318</updated>
-    </task>
-    <task id="LOCAL-00005" summary="l3cha t7reg">
-      <created>1667503385947</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1667503385948</updated>
+      <workItem from="1676637892980" duration="4779000" />
+      <workItem from="1676645359219" duration="305000" />
     </task>
     <task id="LOCAL-00006" summary="progress">
       <created>1667509924442</created>
@@ -523,7 +501,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676644032324</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Added Screenshots">
+      <created>1676645105382</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1676645105382</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Added Screenshots">
+      <created>1676645122028</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1676645122028</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -546,7 +538,6 @@
     <ignored-roots>
       <path value="$USER_HOME$" />
     </ignored-roots>
-    <MESSAGE value="l3cha t7reg" />
     <MESSAGE value="progress" />
     <MESSAGE value="a mimir" />
     <MESSAGE value="oncf" />
@@ -571,7 +562,8 @@
     <MESSAGE value="Swing App 1.0" />
     <MESSAGE value="Fix for jar build" />
     <MESSAGE value="Swing app 1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Swing app 1.0" />
+    <MESSAGE value="Added Screenshots" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Screenshots" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
