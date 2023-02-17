@@ -16,7 +16,7 @@ Client : test@test.com / 123456
 
 <img src="https://github.com/CeIIardoor/GestionBanqueSwing/blob/master/Screenshots/LoginScreen.png" alt="Dire Straits Bank">
 <br/>
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 10px; grid-auto-rows: minmax(100px, auto);">
+<div style="display: grid; grid-template-columns: repeat(2, 2fr); grid-gap: 10px; grid-auto-rows: minmax(200px, auto);">
 <img src="https://github.com/CeIIardoor/GestionBanqueSwing/blob/master/Screenshots/Admin%20Transactionnel.png" alt="Dire Straits Bank" width="200" height="200">
 <img src="https://github.com/CeIIardoor/GestionBanqueSwing/blob/master/Screenshots/CRUD%20Admin.png" alt="Dire Straits Bank" width="200" height="200">
 <img src="https://github.com/CeIIardoor/GestionBanqueSwing/blob/master/Screenshots/Dashboard%20Admin.png" alt="Dire Straits Bank" width="200" height="200">
