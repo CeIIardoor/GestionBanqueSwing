@@ -1,0 +1,7 @@
+idClient;nom;prenom;email;password;dateAjout
+1;Yassine;Laouina;client@test.com;123456;2023/02/13
+2;John;Doe;johndoe@test.com;123456;2023/02/13
+3;Jane;Doe;janedoe@test.com;123456;2023/02/13
+4;Jack;Doe;jackdoe@test.com;123456;2023/02/13
+5;Jill;Doe;Jilldoe@test.com;123456;2023/02/13
+6;Joe;Doe;Joedoe@test.com;123456;2023/02/13
