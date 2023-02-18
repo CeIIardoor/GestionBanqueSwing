@@ -77,10 +77,13 @@ public class LoginPanel extends JPanel {
             User currentUser = authController.authenticate(email, password);
             if (currentUser != null) {
                 if (currentUser.getRole().equals("admin")) {
-                    LogsDAO.write("Admin : " + currentUser.getLogin() + " logged in from Swing");
+                    LogsDAO.write("_______________________________________________________Nouvelle Session");
+                    LogsDAO.write("Admin : " + currentUser.getLogin() + " s'est connecté.");
                     new AdminFrame(banque);
                     (SwingUtilities.getWindowAncestor(this)).dispose();
                 } else if (currentUser.getRole().equals("client")) {
+                    LogsDAO.write("_______________________________________________________Nouvelle Session");
+                    LogsDAO.write("Client : " + currentUser.getLogin() + " s'est connecté.");
                     new ClientFrame(banque, (Client) currentUser);
                     (SwingUtilities.getWindowAncestor(this)).dispose();
                 }

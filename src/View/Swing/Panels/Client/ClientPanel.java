@@ -71,7 +71,6 @@ public class ClientPanel extends JPanel {
 
                     JOptionPane.showMessageDialog(null, "Retrait effectué avec succès",
                             "Retrait d'argent", JOptionPane.INFORMATION_MESSAGE);
-                    LogsDAO.write("Retrait de " + montant + "MAD du compte " + idCompte);
                     FilesHandler.save(banque);
                     ClientPanel.this.removeAll();
                     ClientPanel.this.add(new ClientPanel(banque, client));
@@ -109,7 +108,6 @@ public class ClientPanel extends JPanel {
                 if (ServiceTransactionnel.deposer(montant, client.getCompteByID(idCompte))) {
                     JOptionPane.showMessageDialog(null, "Dépôt effectué avec succès",
                             "Dépôt d'argent", JOptionPane.INFORMATION_MESSAGE);
-                    LogsDAO.write("Dépôt de " + montant + "MAD au compte " + idCompte);
                     FilesHandler.save(banque);
                     ClientPanel.this.removeAll();
                     ClientPanel.this.add(new ClientPanel(banque, client));
@@ -171,7 +169,6 @@ public class ClientPanel extends JPanel {
                 if (ServiceTransactionnel.verser(montant, client.getCompteByID(idCompteClient), banque.getCompteById(idCompteBanque))) {
                     JOptionPane.showMessageDialog(null, "Virement effectué avec succès",
                             "Virement d'argent", JOptionPane.INFORMATION_MESSAGE);
-                    LogsDAO.write("Virement de " + montant + "MAD du compte " + idCompteClient + " au compte " + idCompteBanque);
                     FilesHandler.save(banque);
                     ClientPanel.this.removeAll();
                     ClientPanel.this.add(new ClientPanel(banque, client));

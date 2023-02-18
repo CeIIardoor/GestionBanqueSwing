@@ -1,12 +1,12 @@
 package DAO;
 
 import DAO.FilesDAO.FilesBasePaths;
+import DAO.FilesDAO.FilesHandler;
 import Model.Banque;
 import Model.Client;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -39,18 +39,15 @@ public class ClientsDAO {
     }
 
     public static void writeClient(Client client) {
-        File clientscsv = new File(FilesBasePaths.CLIENTS_PATH.toURI());
         try {
-            FileWriter writer = new FileWriter(clientscsv, true);
             String sb = client.getId() + ";" +
                     client.getNom() + ";" +
                     client.getPrenom() + ";" +
                     client.getEmail() + ";" +
                     client.getPassword() + ";" +
                     client.getDateAjout() +
-                    "\n";
-            writer.write(sb);
-            writer.close();
+                    System.lineSeparator();
+            FilesHandler.lockAndWrite(FilesBasePaths.CLIENTS_PATH.toPath(), sb, true);
         } catch (IOException e) {
             e.printStackTrace();
         }

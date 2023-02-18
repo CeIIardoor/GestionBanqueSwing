@@ -8,10 +8,46 @@ import Model.Client;
 import Model.Compte;
 
 import java.io.IOException;
+import java.nio.channels.FileChannel;
+import java.nio.channels.FileLock;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
+import java.util.List;
 
 public class FilesHandler implements FilesBasePaths {
+
+    public static void lockAndWrite(Path filePath, String content, boolean append) throws IOException {
+        try (FileChannel channel = FileChannel.open(filePath, StandardOpenOption.WRITE, StandardOpenOption.CREATE)) {
+            FileLock lock = channel.lock();
+            try {
+                if (append) {
+                    channel.position(channel.size());
+                }
+                channel.write(StandardCharsets.UTF_8.encode(content));
+            } finally {
+                lock.release();
+            }
+        }
+    }
+
+    public static void lockAndWriteList(Path filePath, List<String> lines, boolean append) throws IOException {
+        try (FileChannel channel = FileChannel.open(filePath, StandardOpenOption.WRITE, StandardOpenOption.CREATE)) {
+            FileLock lock = channel.lock();
+            try {
+                if (append) {
+                    channel.position(channel.size());
+                }
+
+                for (String line : lines) {
+                    channel.write(StandardCharsets.UTF_8.encode(line + System.lineSeparator()));
+                }
+            } finally {
+                lock.release();
+            }
+        }
+    }
 
     static void createBasePath() {
         if (!BASE_FOLDER.toFile().exists()) {
@@ -54,11 +90,37 @@ public class FilesHandler implements FilesBasePaths {
     static void createHeaders() {
         try {
             if (CLIENTS_PATH.length() == 0) {
-                Files.write(CLIENTS_PATH.toPath(), ("idClient;nom;prenom;email;password;dateAjout\n").getBytes(), StandardOpenOption.APPEND);
+                lockAndWrite(CLIENTS_PATH.toPath(), "id;nom;prenom;email;password;dateCreation"
+                        + System.lineSeparator(), false);
             }
-            if (COMPTES_PATH.length() == 0) {
-                Files.write(COMPTES_PATH.toPath(), ("idCompte;idClient;solde;dateCreation\n").getBytes(), StandardOpenOption.APPEND);
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
+        if (COMPTES_PATH.length() == 0) {
+            try {
+                lockAndWrite(COMPTES_PATH.toPath(), "id;idClient;solde;dateCreation"
+                        + System.lineSeparator(), false);
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
             }
+        }
+    }
+
+    public static void seedClients() {
+        try {
+            List<String> seeds = List.of(
+                    "1;1;1000;2023/02/13",
+                    "2;1;2000;2023/02/12",
+                    "3;2;3000;2023/02/11",
+                    "4;2;4000;2023/02/10",
+                    "5;3;5000;2023/02/09",
+                    "6;3;6000;2023/02/08",
+                    "7;4;7000;2023/02/07",
+                    "8;4;8000;2023/02/06",
+                    "9;5;9000;2023/02/05",
+                    "10;5;10000;2023/02/04"
+            );
+            lockAndWriteList(COMPTES_PATH.toPath(), seeds, true);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -66,35 +128,15 @@ public class FilesHandler implements FilesBasePaths {
 
     public static void seedComptes() {
         try {
-            Files.write(CLIENTS_PATH.toPath(), ("1;Yassine;Laouina;client@test.com;123456;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(CLIENTS_PATH.toPath(), ("2;John;Doe;johndoe@test.com;123456;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(CLIENTS_PATH.toPath(), ("3;Jane;Doe;janedoe@test.com;123456;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(CLIENTS_PATH.toPath(), ("4;Jack;Doe;jackdoe@test.com;123456;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(CLIENTS_PATH.toPath(), ("5;Jill;Doe;Jilldoe@test.com;123456;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(CLIENTS_PATH.toPath(), ("6;Joe;Doe;Joedoe@test.com;123456;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public static void seedClients() {
-        try {
-            Files.write(COMPTES_PATH.toPath(), ("1;1;1000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(COMPTES_PATH.toPath(), ("2;1;2000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(COMPTES_PATH.toPath(), ("3;2;3000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(COMPTES_PATH.toPath(), ("4;2;4000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(COMPTES_PATH.toPath(), ("5;3;5000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(COMPTES_PATH.toPath(), ("6;3;6000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(COMPTES_PATH.toPath(), ("7;3;7000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(COMPTES_PATH.toPath(), ("8;4;8000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(COMPTES_PATH.toPath(), ("9;4;9000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(COMPTES_PATH.toPath(), ("10;5;10000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(COMPTES_PATH.toPath(), ("11;5;11000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(COMPTES_PATH.toPath(), ("12;5;12000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(COMPTES_PATH.toPath(), ("13;6;13000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(COMPTES_PATH.toPath(), ("14;6;14000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(COMPTES_PATH.toPath(), ("15;6;15000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
-            Files.write(COMPTES_PATH.toPath(), ("16;6;16000;2023/02/13\n").getBytes(), StandardOpenOption.APPEND);
+            List<String> seeds = List.of(
+                    "1;Yassine;Laouina;client@test.com;123456;2023/02/13",
+                    "2;John;Doe;johndoe@test.com;123456;2023/02/13",
+                    "3;Jane;Doe;janedoe@test.com;123456;2023/02/13",
+                    "4;Jack;Doe;jackdoe@test.com;123456;2023/02/13",
+                    "5;Jill;Doe;jilldoe@test.com;123456;2023/02/13",
+                    "6;Joe;Doe;joedoe@test.com;123456;2023/02/13"
+            );
+            lockAndWriteList(CLIENTS_PATH.toPath(), seeds, true);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -124,7 +166,6 @@ public class FilesHandler implements FilesBasePaths {
                 ComptesDAO.writeCompte(compte, client.getId());
             }
         }
-
     }
 
     public static void drop() {

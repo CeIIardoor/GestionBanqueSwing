@@ -1,13 +1,13 @@
 package DAO;
 
 import DAO.FilesDAO.FilesBasePaths;
+import DAO.FilesDAO.FilesHandler;
 import Model.Banque;
 import Model.Client;
 import Model.Compte;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileWriter;
 import java.util.Scanner;
 
 public class ComptesDAO {
@@ -31,16 +31,13 @@ public class ComptesDAO {
     }
 
     public static void writeCompte(Compte compte, int idClient) {
-        File comptescsv = new File(FilesBasePaths.COMPTES_PATH.toURI());
         try {
-            FileWriter writer = new FileWriter(comptescsv, true);
             String sb = compte.getId() + ";" +
                     idClient + ";" +
                     compte.getSolde() + ";" +
                     compte.getDateCreation() +
-                    "\n";
-            writer.write(sb);
-            writer.close();
+                    System.lineSeparator();
+            FilesHandler.lockAndWrite(FilesBasePaths.COMPTES_PATH.toPath(), sb, true);
         } catch (Exception e) {
             e.printStackTrace();
         }

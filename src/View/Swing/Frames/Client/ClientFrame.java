@@ -1,6 +1,7 @@
 package View.Swing.Frames.Client;
 
 import DAO.FilesDAO.FilesHandler;
+import DAO.LogsDAO;
 import Model.Banque;
 import Model.Client;
 import View.Swing.Panels.Client.ClientPanel;
@@ -16,6 +17,7 @@ public class ClientFrame extends JFrame {
             @Override
             public void windowClosing(WindowEvent e) {
                 FilesHandler.save(banque);
+                LogsDAO.write("_______________________________________________________Fin Session");
                 System.exit(0);
             }
         });
