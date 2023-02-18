@@ -12,47 +12,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef869a2e-b100-43cb-8dfe-fcf2c7a1621a" name="Changes" comment="Minor bugfix">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/GestionBanque_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/GestionBanque_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DB/clients.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DB/comptes.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DB/logs.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jar/DB/clients.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jar/DB/comptes.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jar/DB/logs.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jar/GestionBanque.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jar/GestionBanque.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jar/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jar/META-INF/icon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/DAO/ClientsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/DAO/ClientsDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/DAO/ComptesDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/DAO/ComptesDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/DAO/FilesDAO/FilesHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/DAO/FilesDAO/FilesHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/Service/ServiceTri.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/Service/ServiceTri.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/View/Console/MenuAdmin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/View/Console/MenuAdmin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/Frames/Admin/AdminFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/Frames/Admin/AdminFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/Frames/Admin/AdminFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/Frames/Admin/AdminFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/Frames/Admin/CRUDFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/Frames/Admin/CRUDFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/Frames/Admin/CRUDFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/Frames/Admin/CRUDFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/Frames/Admin/TransactionnelFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/Frames/Admin/TransactionnelFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/Frames/Admin/TransactionnelFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/Frames/Admin/TransactionnelFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/Frames/Client/ClientFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/Frames/Client/ClientFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/Frames/Client/ClientFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/Frames/Client/ClientFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/Panels/Admin/AdminPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/Panels/Admin/AdminPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/Panels/Auth/LoginPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/Panels/Auth/LoginPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/Panels/Client/ClientPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/Panels/Client/ClientPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/SwingFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionBanque/View/Swing/SwingFacade.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAO/ClientsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/ClientsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAO/ComptesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/ComptesDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAO/FilesDAO/FilesHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/FilesDAO/FilesHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Swing/Frames/Admin/AdminFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Frames/Admin/AdminFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Swing/Frames/Admin/CRUDFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Frames/Admin/CRUDFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Swing/Frames/Admin/TransactionnelFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Frames/Admin/TransactionnelFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Swing/Frames/Client/ClientFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Frames/Client/ClientFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Swing/Panels/Client/ClientPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/Panels/Client/ClientPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Swing/SwingFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Swing/SwingFacade.java" afterDir="false" />
-    </list>
+    <list default="true" id="ef869a2e-b100-43cb-8dfe-fcf2c7a1621a" name="Changes" comment="Added Write Locks for an edge case" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -211,14 +171,7 @@
       <workItem from="1676635656163" duration="1490000" />
       <workItem from="1676637892980" duration="4779000" />
       <workItem from="1676645359219" duration="3279000" />
-      <workItem from="1676684422583" duration="4880000" />
-    </task>
-    <task id="LOCAL-00018" summary="js vibes : scanner.close closes system.in ?">
-      <created>1667588806109</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1667588806109</updated>
+      <workItem from="1676684422583" duration="5221000" />
     </task>
     <task id="LOCAL-00019" summary="js vibes : scanner.close closes system.in ?">
       <created>1667606964942</created>
@@ -556,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676649460011</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Added Write Locks for an edge case">
+      <created>1676689707924</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1676689707924</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -579,7 +539,6 @@
     <ignored-roots>
       <path value="$USER_HOME$" />
     </ignored-roots>
-    <MESSAGE value="nostalgia" />
     <MESSAGE value="js vibes : scanner.close closes system.in ?" />
     <MESSAGE value="Suppression" />
     <MESSAGE value="Menu" />
@@ -604,7 +563,8 @@
     <MESSAGE value="Fix minor bug" />
     <MESSAGE value="Code CleanUp" />
     <MESSAGE value="Minor bugfix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor bugfix" />
+    <MESSAGE value="Added Write Locks for an edge case" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Write Locks for an edge case" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
