@@ -4,7 +4,9 @@
 
 ## Description
 
-Projet de gestion de banque en Java. Console et Swing.
+ Application de gestion bancaire de clients avec multiples comptes. 
+ <br>
+ Implementations : Opérations de retrait, virements et versement, Un dashboard administrateur contenant les operations CRUD, DAO pour lire et écrire dans la base de données, Systeme d'authentification client/admin sur un seul Panel, Thread locks pour la gestion des transactions.
 
 ## Sessions
 
