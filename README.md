@@ -29,8 +29,8 @@ Client : test@test.com / 123456
 
 ## Installation
 
-- Windows : Plug and play (Jar/GestionBanque.exe)
-- Mac : Plug and play (Jar/GestionBanque.jar)
+- Windows : Plug and play (can be found at : Executables/GestionBanque.exe)
+- Mac : Plug and play (can be found at : Executables/GestionBanque.jar)
 - Linux & microwaves :
 
 ```bash
